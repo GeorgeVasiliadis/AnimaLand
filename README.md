@@ -1,15 +1,11 @@
 # AnimaLand
 
----
-
 ## Optional Main Workflow
 
 1. Stay Organized
 1. Brainstorm and Design
 1. Develop
 1. Test
-
----
 
 ## Git/ GitHub
 
