@@ -17,5 +17,5 @@ frontEnd:
     - "Create Issue"
     - "Vote Issue"
     - "Upload article"
-    - "Upload quote" 
+    - "Upload quote"
 backEnd:

@@ -13,3 +13,7 @@ https://www.wwf.org.uk/thingsyoucando
 
 Layout for Articles:
 https://www.nature.org/en-us/about-us/who-we-are/our-science/three-ways-to-save-our-planet/
+
+Login Page:
+- Login/ Register combined sections
+https://www.instagram.com/accounts/login/
