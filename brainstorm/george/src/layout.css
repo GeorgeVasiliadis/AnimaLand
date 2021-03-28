@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.appetizer {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.lefty img{
+  order: -1;
+}
+
+.righty img{
+  order: 1;
+}
+
+footer {
+  display: flex;
+}
+
+.fblock {
+  margin: auto 10px;
+}
