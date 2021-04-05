@@ -4,6 +4,12 @@ Generally good-looking website:
 - Elegant header/ footer
 https://friendsoftheearth.uk/climate/saving-planet-top-tips-help-climate-and-nature
 
+Home page Structure:
+- Banner
+- General Paragraph
+- Left/Right Paragraph-Image pairs
+https://en.duolingo.com/course/en/el/Learn-English
+
 Article list for Info Page:
 https://mathesis.cup.gr/
 

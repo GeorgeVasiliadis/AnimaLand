@@ -1,0 +1,12 @@
+.parallax {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13% ;
+    background:url("https://via.placeholder.com/1920x1080?text=Super+Dramatic+Image");
+    /*background:url("res/desert.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
