@@ -113,6 +113,12 @@ h4{
   border-radius: 50%
 
 }
+#myCarousel img {
+width: auto;
+height: 400px;
+/*max-height: 405px;*/
+
+}
 
 
 
