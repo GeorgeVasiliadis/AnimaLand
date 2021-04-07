@@ -1,0 +1,120 @@
+body {
+  background-color: #f2ffe6;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+p {
+  margin-left: 10px;
+  color: #003300;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-family: "Times New Roman", Times, serif;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+}
+
+h1 {
+    font-size: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 1px;
+    color: white;
+}
+
+h2{
+  font-size: 22px;
+  padding-bottom: 4px;
+    color: #003300;
+}
+
+h3{
+  font-size: 18px;
+  padding-bottom: 4px;
+  padding-left: : 5px;
+  color: #003300;
+}
+
+h4{
+  font-size: 16px;
+    color: #003300;
+}
+
+/*for the image in the page*/
+.image {
+  background-image: linear-gradient(rgba(0.3, 0.3, 0.3, 0.1), rgba(0.3, 0.3, 0.3, 0.1)), url("https://cf.ltkcdn.net/greenliving/images/orig/225070-1600x1067-Environmental-Pollution-Concept.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.carousel-inner > .item {
+   height: 400px;
+}
+.carousel {
+  width:700px;
+  height:360px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.carousel-caption {
+
+    bottom: 0px;
+    padding-bottom: 20px;
+}
+
+/*for the image in the page*/
+.text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*for the image in each paragraph*/
+.imageright{
+  float:right;
+  width: 300;
+  height: 200;
+  border-radius: 50%
+}
+.imageleft{
+  float:left;
+  width: 300;
+  height: 200;
+  clear: left;
+  margin-right: 10px
+
+}
+.imageright1{
+  float:right;
+  width: 300;
+  height: 200;
+  clear:right;
+  margin-left: 10px
+
+}
+.imageleft1{
+  float:left;
+  width: 300;
+  height: 200;
+  border-radius: 50%
+
+}
+
+
+
+
+}
