@@ -1,13 +1,9 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="mystyle.css">
-<script  src="mystyle.js"></script>
 
-
-
+  <link rel="stylesheet" href="mystyle.css">
+<meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <title>
@@ -15,64 +11,140 @@
     </title>
 </head>
 
-<body>
-  <div class="container">
-    <div class="row">
-
-    <div class="image">
-      <div class="text"><h1 style="font-size:50px">Threats </h1></div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Animaland</a>
     </div>
 
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
 
-    <h2>Today's Threats</h2>
-  <p> Human activity is a major threat to the planet's biodiversity. This is because human population growth thus far has been exponential, meaning that its growth rate stays the same regardless of population size.Unfortunatly, the human impact has unpleasant concequences.</p>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Threats
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Pollution</a></li>
+          <li><a href="#">Introduced species</a></li>
+          <li><a href="#">Genetic Modification</a></li>
+          <li><a href="#">Deforastation-Desertification</a></li>
+          <li><a href="#">Diseases</a></li>
 
-  <h3> Pollution</h3>
-  <p>
-    Pollution can occur from the run off or disposal of chemical substances, or from energy sources .Many things that are useful to people produce pollution.<img class="imageright" src="https://images2.storyjumper.com/transcoder.png?trim&id=ey-iiqbsch6f-5bzqm9mu7&maxw=512&maxh=512" alt="pollution">
-     Cars spew pollutants from their exhaust pipes. Industries and homes generate garbage and sewage that can pollute the land and water.
-     The major kinds of pollution, usually classified by environment, are:
-     <br>
-       <p> <span style="font-weight:900">Air pollution:</span>is a mixture of solid particles and gases in the air. Car emissions, chemicals from factories, dust, pollen and mold spores may be suspended as particles.
-       Some air pollutants are poisonous. Inhaling them can increase the chance you'll have health problems.<p>
-      <p> <span style="font-weight:900">Water pollution:</span> can be caused in a number of ways, one of the most polluting being city sewage and industrial waste discharge. This degrades the quality of water.</p>
+        </ul>
+      </li>
 
-      <p> <span style="font-weight:900">Land pollution:</span> is anything that damages or contaminates the land.Land pollution, in other words, means degradation or destruction of the Earth’s surface and soil, directly or indirectly, as a result of human activities.</p>
-    <p>Modern society is also concerned about specific types of pollutants, such as noise pollution, light pollution, and plastic pollution. Pollution of all kinds can have negative effects on the environment and wildlife and often impacts human health and well-being.</p></br>
+      <li><a href="#">Goals</a></li>
+      <li><a href="#">What can I do?</a></li>
+      <li><a href="#">Contact</a></li>
+      <!--<li><a href="#">Login/Register</a></li>-->
+
+    </ul>
+  <!--  <form  style="float:right" class="navbar-form navbar-left" action="/action_page.php">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit">
+          <i class="glyphicon glyphicon-search"></i>
+        </button>
+      </div>
+    </div>
+  </form>-->
+  <!--<ul class="nav navbar-nav navbar-right">
+       <li>
+          <form  class="navbar-form" role="search" aria-expanded="false">
+           <div class="input-group add-on">
+              <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                     <i class="glyphicon glyphicon-search"></i>
+                 </button>
+              </div>
+           </div>
+          </form>
+          </li>
+      </ul>-->
+      <form class="navbar-form navbar-left" action="/action_page.php">
+     <div class="form-group">
+       <input type="text" class="form-control" placeholder="Search">
+     </div>
+     <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+    </button>
+   </form>
+
+  <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span><button class="btn btn-danger navbar-btn"> Sign Up</button></a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <button class="btn btn-danger navbar-btn"> Login</button></a></li>
+    </ul>
+
+  <!--  <ul class="nav navbar-nav navbar-right">
+       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+     </ul>-->
+
+
+</div>
+</div>
+</nav>
+
+<div class="container">
+  <div class="row">
+
+  <div class="image">
+    <div class="text"><h1 style="font-size:50px">Threats </h1></div>
+  </div>
+
+
+  <h2>Today's Threats</h2>
+<p> Human activity is a major threat to the planet's biodiversity. This is because human population growth thus far has been exponential, meaning that its growth rate stays the same regardless of population size.Unfortunatly, the human impact has unpleasant concequences.</p>
+
+<h3> Pollution</h3>
+<p>
+  Pollution can occur from the run off or disposal of chemical substances, or from energy sources .Many things that are useful to people produce pollution.<img class="imageright" src="https://images2.storyjumper.com/transcoder.png?trim&id=ey-iiqbsch6f-5bzqm9mu7&maxw=512&maxh=512" alt="pollution">
+   Cars spew pollutants from their exhaust pipes. Industries and homes generate garbage and sewage that can pollute the land and water.
+   The major kinds of pollution, usually classified by environment, are:
+   <br>
+     <p> <span style="font-weight:900">Air pollution:</span>is a mixture of solid particles and gases in the air. Car emissions, chemicals from factories, dust, pollen and mold spores may be suspended as particles.
+     Some air pollutants are poisonous. Inhaling them can increase the chance you'll have health problems.<p>
+    <p> <span style="font-weight:900">Water pollution:</span> can be caused in a number of ways, one of the most polluting being city sewage and industrial waste discharge. This degrades the quality of water.</p>
+
+    <p> <span style="font-weight:900">Land pollution:</span> is anything that damages or contaminates the land.Land pollution, in other words, means degradation or destruction of the Earth’s surface and soil, directly or indirectly, as a result of human activities.</p>
+  <p>Modern society is also concerned about specific types of pollutants, such as noise pollution, light pollution, and plastic pollution. Pollution of all kinds can have negative effects on the environment and wildlife and often impacts human health and well-being.</p></br>
 </p>
 
 <br>
-  <h3>Introduced species </h3>
-  <p>  Humans may unintentionally, or intentionally, introduce a non-native species into an ecosystem. <img class="imageleft" src="https://cff2.earth.com/uploads/2018/12/30041613/invasive-species-plants-animals.jpg" alt="introduced species">
-    This can negatively effect an ecosystem because the introduced species may outcompete native organisms and displace them.
-    nvasive species cause harm to wildlife in many ways. When a new and aggressive species is introduced into an ecosystem, it may not have any natural predators or controls. It can breed and spread quickly, taking over an area. Native wildlife may not have evolved defenses against the invader, or they may not be able to compete with a species that has no predators.However, other introduced species may have no negative effect or only minor impact .
-     <a href="https://www.youtube.com/watch?v=gYNAtw1c7hI">Take a look!</a>
-  </p>
+<h3>Introduced species </h3>
+<p>  Humans may unintentionally, or intentionally, introduce a non-native species into an ecosystem. <img class="imageleft" src="https://cff2.earth.com/uploads/2018/12/30041613/invasive-species-plants-animals.jpg" alt="introduced species">
+  This can negatively effect an ecosystem because the introduced species may outcompete native organisms and displace them.
+  nvasive species cause harm to wildlife in many ways. When a new and aggressive species is introduced into an ecosystem, it may not have any natural predators or controls. It can breed and spread quickly, taking over an area. Native wildlife may not have evolved defenses against the invader, or they may not be able to compete with a species that has no predators.However, other introduced species may have no negative effect or only minor impact .
+   <a href="https://www.youtube.com/watch?v=gYNAtw1c7hI">Take a look!</a>
+</p>
 
 </br>
 
 <br><br><br><br>
 
-  <h3> Genetic Modification</h3>
-  <p> <img class="imageright1" src="https://stmedia.stimg.co/ows_145376764576289.jpg?fit=crop&crop=faces" alt="Genetic Modification"><a href="https://www.youtube.com/watch?v=rx953M-tpp4">Genetic Modification</a>  is a technique to change the characteristics of a plant, animal or micro-organism by transferring a piece of DNA from one organism to a different organism.
-    This is done through targeted removal of the desired genes from the DNA of one organism and adding them to the other organism. Recently developed techniques for modifying genes are often called “gene editing.”The use of genetic modified organisms, or GMOs, has played an important role in increasing crop yields so we can feed our populations. In addition to providing better crop yields, modified plants are better able to resist disease and parasites, tolerate more extreme temperatures, or thrive with less water.</p>
+<h3> Genetic Modification</h3>
+<p> <img class="imageright1" src="https://stmedia.stimg.co/ows_145376764576289.jpg?fit=crop&crop=faces" alt="Genetic Modification"><a href="https://www.youtube.com/watch?v=rx953M-tpp4">Genetic Modification</a>  is a technique to change the characteristics of a plant, animal or micro-organism by transferring a piece of DNA from one organism to a different organism.
+  This is done through targeted removal of the desired genes from the DNA of one organism and adding them to the other organism. Recently developed techniques for modifying genes are often called “gene editing.”The use of genetic modified organisms, or GMOs, has played an important role in increasing crop yields so we can feed our populations. In addition to providing better crop yields, modified plants are better able to resist disease and parasites, tolerate more extreme temperatures, or thrive with less water.</p>
 </br>
 </br></br></br>
 
 <br>
-  <h3>Deforestation-Desertification </h3>
-  <p> <img class="imageleft1" src="https://cdn.pixabay.com/photo/2015/09/27/15/29/forestry-960806_1280.jpg" alt="deforestation">Deforestation and desertification caused by human activities and climate change – pose major challenges to sustainable development and have affected the lives and livelihoods of millions of people. Forests are vitally important for sustaining life on Earth, and play a major role in the fight against climate change. And investing in land restoration is critical for improving livelihoods, reducing vulnerabilities, and reducing risks for the economy.For every corn field you see, chances are good there was once a forest in its place. As our population continues to increase, humans create more and larger farms, which means removing the dwindling number of forests. Forests are also cleared for the lumber that we use to build our houses and to make room for new houses.
+<h3>Deforestation-Desertification </h3>
+<p> <img class="imageleft1" src="https://cdn.pixabay.com/photo/2015/09/27/15/29/forestry-960806_1280.jpg" alt="deforestation">Deforestation and desertification caused by human activities and climate change – pose major challenges to sustainable development and have affected the lives and livelihoods of millions of people. Forests are vitally important for sustaining life on Earth, and play a major role in the fight against climate change. And investing in land restoration is critical for improving livelihoods, reducing vulnerabilities, and reducing risks for the economy.For every corn field you see, chances are good there was once a forest in its place. As our population continues to increase, humans create more and larger farms, which means removing the dwindling number of forests. Forests are also cleared for the lumber that we use to build our houses and to make room for new houses.
 
 <img class="imageright" src="https://cdn.pixabay.com/photo/2020/03/24/05/10/tropical-4962783_1280.jpg" alt="desertification">
 
 </p>
 
-   <p><span style="font-weight:900">Deforestation:</span>After oceans, forests are the largest storehouses of carbon. But we're losing forests at an alarming rate.
-     Over 43 million hectares, an area roughly the size of Morocco, was lost in these 'deforestation fronts' between 2004 and 2017.
+ <p><span style="font-weight:900">Deforestation:</span>After oceans, forests are the largest storehouses of carbon. But we're losing forests at an alarming rate.
+   Over 43 million hectares, an area roughly the size of Morocco, was lost in these 'deforestation fronts' between 2004 and 2017.
 
 Deforestation puts human health and the health of our planet at risk. From policymakers to companies to consumers, urgent action is needed to halt forest loss.</p>
- <p><span style="font-weight:900">Desertification:</span>
-   The risk of desertification is widespread and spans more than 100 countries, humans are driving the transformation of drylands into desert on an unprecedented scale around the world.
+<p><span style="font-weight:900">Desertification:</span>
+ The risk of desertification is widespread and spans more than 100 countries, humans are driving the transformation of drylands into desert on an unprecedented scale around the world.
 More than 75 percent of Earth's land area is already degraded, according to the European Commission's World Atlas of Desertification, and more than 90 percent could become degraded by 2050.
 </p>
 </br>
@@ -80,133 +152,132 @@ More than 75 percent of Earth's land area is already degraded, according to the 
 <br>
 <h3> Diseases</h3>
 <img class="imageright1" src="https://cdn.pixabay.com/photo/2020/06/16/16/00/people-5306374_1280.png" alt="disease">
-   <p>The health of our planet also plays an important role in the emergence of zoonotic diseases, i.e. diseases that are transmissible between animals and humans. As we continue to encroach on fragile ecosystems, we bring humans into ever-greater contact with wildlife, enabling pathogens in wildlife to spill over to livestock and humans, increasing the risk of disease emergence and amplification.
+ <p>The health of our planet also plays an important role in the emergence of zoonotic diseases, i.e. diseases that are transmissible between animals and humans. As we continue to encroach on fragile ecosystems, we bring humans into ever-greater contact with wildlife, enabling pathogens in wildlife to spill over to livestock and humans, increasing the risk of disease emergence and amplification.
 
-     The COVID-19 outbreak highlights the need to address threats to ecosystems and wildlife.
+   The COVID-19 outbreak highlights the need to address threats to ecosystems and wildlife.
 
 
-     In 2016, the United Nations Environment Programme (UNEP) flagged a worldwide increase in zoonotic epidemics as an issue of concern. Specifically, it pointed out that 75 per cent of all emerging infectious diseases in humans are zoonotic and that these zoonotic diseases are closely interlinked with the health of ecosystems.
+   In 2016, the United Nations Environment Programme (UNEP) flagged a worldwide increase in zoonotic epidemics as an issue of concern. Specifically, it pointed out that 75 per cent of all emerging infectious diseases in humans are zoonotic and that these zoonotic diseases are closely interlinked with the health of ecosystems.
 
-     “In COVID-19, the planet has delivered its strongest warning to date that humanity must change,”<a href="https://www.unep.org/news-and-stories/press-release/unep-steps-work-zoonotics-protecting-environment-reduce-pandemic">said UNEP Executive Director Inger Andersen.</a>
-  </p>
+   “In COVID-19, the planet has delivered its strongest warning to date that humanity must change,”<a href="https://www.unep.org/news-and-stories/press-release/unep-steps-work-zoonotics-protecting-environment-reduce-pandemic">said UNEP Executive Director Inger Andersen.</a>
+</p>
 
 
 <br><br><br><br>
 <!--Gallery-->
-  <h3 style="text-align:center"> Endangered species </h3>
+<h3 style="text-align:center"> Endangered species </h3>
 
 <div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <!--The bullets-->
-    <!--<ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol> -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <!--The bullets-->
+  <!--<ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol> -->
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item">
-        <img src="https://cdn.pixabay.com/photo/2020/07/17/14/06/cheetah-5414211_1280.jpg" alt="cheetah" style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Cheetah</h3>
-          <p style="color:white"> Today there are just 7,100 cheetahs left in the wild.</p>
-
-        </div>
-      </div>
-
-
-      <div class="item active">
-        <img src="https://cdn.pixabay.com/photo/2020/06/11/12/00/gorilla-5286468_1280.jpg" alt="Mountain Gorilla" style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Mountain Gorilla</h3>
-          <p style="color:white">Today, around 1,063 mountain gorillas are thought to exist in the wild.</p>
-        </div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item">
+      <img src="https://cdn.pixabay.com/photo/2020/07/17/14/06/cheetah-5414211_1280.jpg" alt="cheetah" style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Cheetah</h3>
+        <p style="color:white"> Today there are just 7,100 cheetahs left in the wild.</p>
 
       </div>
+    </div>
 
 
-
-      <div class="item">
-        <img src="https://cdn.pixabay.com/photo/2017/07/22/22/56/tiger-2530158_1280.jpg" alt="tiger" style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Tiger</h3>
-          <p style="color:white">Its population has diminished by more than 60% due to human invasion!</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://cdn.pixabay.com/photo/2018/03/12/04/00/mammal-3218712_1280.jpg" alt="elephant" style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Asian Elephant</h3>
-          <p style="color:white">Threats to wild Asian elephant populations include habitat loss from deforestation and agricultural development.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://cdn.pixabay.com/photo/2017/08/29/01/13/dolphin-2691864_1280.jpg" alt="dolphin" style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Vaquita porpoise</h3>
-          <p style="color:white">Threats to wild Asian elephant populations include habitat loss from deforestation and agricultural development.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://worldoffloweringplants.com/wp-content/uploads/2017/04/Rafflesia-arnoldii-Corpse-Flower3.jpg" alt="Rafflesia Flower " style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Rafflesia Flower </h3>
-          <p style="color:white">These flowers are endangered due to land clearing, logging, and ethnobotanical collecting.</p>
-        </div>
-      </div>
-
-
-      <div class="item">
-        <img src="https://cdn.pixabay.com/photo/2012/09/22/12/33/flowers-57764_1280.jpg" alt="Georgia Aster " style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Georgia Aster </h3>
-          <p style="color:white">Now there are about 60 populations of this plant due to natural habitat development.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://cdn.pixabay.com/photo/2018/07/30/06/29/nature-3571877_1280.jpg" alt="Ouachita Mountain Goldenrod " style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Ouachita Mountain Goldenrod </h3>
-          <p style="color:white">Nowadays, the goldenrod Washita, has only 130!</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://www.fs.fed.us/wildflowers/plant-of-the-week/images/easternprairiefringedorchid/EasternPrairieFringedOrchid-full.jpg" alt="Weste Prairie Fringed Orchidrn " style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Weste Prairie Fringed Orchidrn </h3>
-          <p style="color:white">The Endangered Species Coalition estimates that there are only 172 populations of this plant.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://pbs.twimg.com/media/DxCB0vmXQAApq7o.jpg" alt="Bois Dentelle " style="width:100%;">
-        <div class="carousel-caption">
-          <h3 style="color:white">Bois Dentelle</h3>
-          <p style="color:white">There are just two Bois Dentelle trees in the world.</p>
-        </div>
+    <div class="item active">
+      <img src="https://cdn.pixabay.com/photo/2020/06/11/12/00/gorilla-5286468_1280.jpg" alt="Mountain Gorilla" style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Mountain Gorilla</h3>
+        <p style="color:white">Today, around 1,063 mountain gorillas are thought to exist in the wild.</p>
       </div>
 
     </div>
 
 
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <div class="item">
+      <img src="https://cdn.pixabay.com/photo/2017/07/22/22/56/tiger-2530158_1280.jpg" alt="tiger" style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Tiger</h3>
+        <p style="color:white">Its population has diminished by more than 60% due to human invasion!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://cdn.pixabay.com/photo/2018/03/12/04/00/mammal-3218712_1280.jpg" alt="elephant" style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Asian Elephant</h3>
+        <p style="color:white">Threats to wild Asian elephant populations include habitat loss from deforestation and agricultural development.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://cdn.pixabay.com/photo/2017/08/29/01/13/dolphin-2691864_1280.jpg" alt="dolphin" style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Vaquita porpoise</h3>
+        <p style="color:white">Threats to wild Asian elephant populations include habitat loss from deforestation and agricultural development.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://worldoffloweringplants.com/wp-content/uploads/2017/04/Rafflesia-arnoldii-Corpse-Flower3.jpg" alt="Rafflesia Flower " style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Rafflesia Flower </h3>
+        <p style="color:white">These flowers are endangered due to land clearing, logging, and ethnobotanical collecting.</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="https://cdn.pixabay.com/photo/2012/09/22/12/33/flowers-57764_1280.jpg" alt="Georgia Aster " style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Georgia Aster </h3>
+        <p style="color:white">Now there are about 60 populations of this plant due to natural habitat development.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://cdn.pixabay.com/photo/2018/07/30/06/29/nature-3571877_1280.jpg" alt="Ouachita Mountain Goldenrod " style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Ouachita Mountain Goldenrod </h3>
+        <p style="color:white">Nowadays, the goldenrod Washita, has only 130!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://www.fs.fed.us/wildflowers/plant-of-the-week/images/easternprairiefringedorchid/EasternPrairieFringedOrchid-full.jpg" alt="Weste Prairie Fringed Orchidrn " style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Weste Prairie Fringed Orchidrn </h3>
+        <p style="color:white">The Endangered Species Coalition estimates that there are only 172 populations of this plant.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://pbs.twimg.com/media/DxCB0vmXQAApq7o.jpg" alt="Bois Dentelle " style="width:100%;">
+      <div class="carousel-caption">
+        <h3 style="color:white">Bois Dentelle</h3>
+        <p style="color:white">There are just two Bois Dentelle trees in the world.</p>
+      </div>
+    </div>
+
   </div>
+
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 </div>
 <br><br> </br></br>
 
@@ -214,5 +285,9 @@ More than 75 percent of Earth's land area is already degraded, according to the 
 
 </div></div>
 </br></br></br></br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
-  </html>
+</html>
