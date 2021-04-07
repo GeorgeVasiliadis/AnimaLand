@@ -57,20 +57,30 @@ h4{
   position: relative;
 }
 
+/*For the carousel*/
 .carousel-inner > .item {
    height: 400px;
 }
 .carousel {
-  width:700px;
-  height:360px;
+  /*width:650px;
+  height:360px;*/
   margin-left: auto;
   margin-right: auto;
+  size:cover;
 
 }
 .carousel-caption {
 
     bottom: 0px;
     padding-bottom: 20px;
+}
+
+
+#myCarousel img {
+width: auto;
+height: 400px;
+/*max-height: 405px;*/
+
 }
 
 /*for the image in the page*/
@@ -113,14 +123,59 @@ h4{
   border-radius: 50%
 
 }
-#myCarousel img {
-width: auto;
-height: 400px;
-/*max-height: 405px;*/
+
+/*Navbar*/
+.navbar {
+    background-color: #F8F8F8;
+    border-color:#f2ffe6;
+    margin: 0 !important;
+    padding: 14px;
+    height: 80px;
+    /*background-image: url("https://cdn.pixabay.com/photo/2016/04/24/17/27/leaves-1350175_1280.jpg");*/
+}
+/*Make the animaland red*/
+.navbar .navbar-brand{
+  color:#003300;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 
 }
+.navbar .navbar-brand:hover{
+  color:green;
 
+}
+.navbar .navbar-nav li a{
+  color:#003300 !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+.navbar .navbar-nav li a:hover{
+  color:green !important;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item{
+  color:#003300 !important;
+}
 
+/*.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+  color:red !important;
+  background-color: #F8F8F8;
+  opacity:0.5;
+}*/
+.navbar .navbar-btn{
+  background-color: green;
+  border:none;
+  height: 30px;
+  width: 70px;
+  text-align: center;
+  margin-top: -0.3px;
 
+}
+.navbar .navbar-btn:hover {
+  background-color:green;
+}
 
 }
