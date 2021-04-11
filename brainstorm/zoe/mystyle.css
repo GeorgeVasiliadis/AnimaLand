@@ -1,7 +1,14 @@
 body {
-  background-color: #f2ffe6;
-  font-family: "Times New Roman", Times, serif;
-  font-style: normal;
+/*  background-color: #f2ffe6;*/
+font-style: normal;
+/*  background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg&ga=GA1.2.1356500412.1617235200");*/
+/*background-image: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/179609-plain-white-texture-background.jpg");*/
+
+}
+.banner{
+  background: url("https://cf.ltkcdn.net/greenliving/images/orig/225070-1600x1067-Environmental-Pollution-Concept.jpg");
+  height: 60vh;
+  background-size: cover;
 }
 
 p {
@@ -11,28 +18,26 @@ p {
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
-  font-family: "Times New Roman", Times, serif;
-
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Times New Roman", Times, serif;
+
   font-weight: bold;
   letter-spacing: 0.5px;
 
 }
-
 h1 {
-    font-size: 80px;
-    padding-bottom: 20px;
-    margin-bottom: 1px;
-    color: white;
+  text-align: center;
+  padding-top: 180px;
+  font-size: 80px;
+  font-space: 1px;
+  color: white;
 }
 
 h2{
   font-size: 22px;
   padding-bottom: 4px;
-    color: #003300;
+  color: #003300;
 }
 
 h3{
@@ -47,135 +52,60 @@ h4{
     color: #003300;
 }
 
-/*for the image in the page*/
-.image {
-  background-image: linear-gradient(rgba(0.3, 0.3, 0.3, 0.1), rgba(0.3, 0.3, 0.3, 0.1)), url("https://cf.ltkcdn.net/greenliving/images/orig/225070-1600x1067-Environmental-Pollution-Concept.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.content{
+   padding-left: 200px;
+   padding-right: 200px;
 }
 
+.row{
+   padding-top: 70px;
+}
 /*For the carousel*/
 .carousel-inner > .item {
-   height: 400px;
+   height: 500px;
 }
 .carousel {
-  /*width:650px;
-  height:360px;*/
+  width:650px;
+  height:400px;
   margin-left: auto;
   margin-right: auto;
   size:cover;
 
+
 }
 .carousel-caption {
-
-    bottom: 0px;
-    padding-bottom: 20px;
+    bottom: 75px;
+    padding-bottom: 0px;
 }
 
 
-#myCarousel img {
-width: auto;
+#carouselExampleCaptions img {
+width: 100px;
 height: 400px;
+
 /*max-height: 405px;*/
 
 }
 
-/*for the image in the page*/
-.text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.carousel .carousel-item {
+  height: 500px;
 }
 
-/*for the image in each paragraph*/
-.imageright{
-  float:right;
-  width: 300;
-  height: 200;
-  border-radius: 50%
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 10px;
+    left: 10px;
+    min-height: 200px;
 }
-.imageleft{
-  float:left;
-  width: 300;
-  height: 200;
-  clear: left;
-  margin-right: 10px
+.carousel-control-prev{
+  height: 400px;
+  color:grey;
+
 
 }
-.imageright1{
-  float:right;
-  width: 300;
-  height: 200;
-  clear:right;
-  margin-left: 10px
+.carousel-control-next{
+  height: 400px;
 
-}
-.imageleft1{
-  float:left;
-  width: 300;
-  height: 200;
-  border-radius: 50%
-
-}
-
-/*Navbar*/
-.navbar {
-    background-color: #F8F8F8;
-    border-color:#f2ffe6;
-    margin: 0 !important;
-    padding: 14px;
-    height: 80px;
-    /*background-image: url("https://cdn.pixabay.com/photo/2016/04/24/17/27/leaves-1350175_1280.jpg");*/
-}
-/*Make the animaland red*/
-.navbar .navbar-brand{
-  color:#003300;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  letter-spacing: 2px;
-
-}
-.navbar .navbar-brand:hover{
-  color:green;
-
-}
-.navbar .navbar-nav li a{
-  color:#003300 !important;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
-  letter-spacing: 1px;
-  padding-right: 18px;
-  padding-left: 18px;
-}
-.navbar .navbar-nav li a:hover{
-  color:green !important;
-}
-.navbar .nav-item .dropdown-menu .dropdown-item{
-  color:#003300 !important;
-}
-
-/*.navbar .nav-item .dropdown-menu .dropdown-item:hover{
-  color:red !important;
-  background-color: #F8F8F8;
-  opacity:0.5;
-}*/
-.navbar .navbar-btn{
-  background-color: green;
-  border:none;
-  height: 30px;
-  width: 70px;
-  text-align: center;
-  margin-top: -0.3px;
-
-}
-.navbar .navbar-btn:hover {
-  background-color:green;
-}
 
 }
