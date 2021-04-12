@@ -1,0 +1,16 @@
+
+#banner{
+  background: url('nature-conservation-480985_1920.jpg') no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28em;
+}
+
+
+#h1-WhatCanIDo {
+  text-align: center;  
+  font-size: 5em;
+}
+  
