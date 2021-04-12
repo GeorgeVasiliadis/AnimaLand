@@ -17,3 +17,5 @@
 - If you love the Earth, it will love you back.
 
 - Make the planet great again.
+
+- The Best Way To Get Started Is To Quit Talking And Begin Doing. _Walt Disney_
