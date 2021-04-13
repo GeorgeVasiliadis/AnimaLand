@@ -1,0 +1,130 @@
+body {
+/*  background-color: #f2ffe6;*/
+
+  font-style: normal;
+/*  background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg&ga=GA1.2.1356500412.1617235200");*/
+/*background-image: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/179609-plain-white-texture-background.jpg");*/
+
+}
+#banner{
+    background: url("https://cf.ltkcdn.net/greenliving/images/orig/225070-1600x1067-Environmental-Pollution-Concept.jpg")no-repeat center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28em;
+}
+
+
+p {
+  margin-left: 10px;
+  color: #003300;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+}
+
+/*h1 {
+    font-size: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 1px;
+    color: white;
+    text-align: center;
+}*/
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 80px;
+  font-space: 1px;
+  color: white;
+}
+
+h2{
+  font-size: 22px;
+  padding-bottom: 4px;
+  color: #003300;
+}
+
+h3{
+  font-size: 18px;
+  padding-bottom: 4px;
+  padding-left: : 5px;
+  color: #003300;
+}
+
+h4{
+  font-size: 16px;
+    color: #003300;
+}
+
+
+
+.row{
+   padding-top: 70px;
+}
+
+
+
+
+
+/*For the carousel*/
+.carousel-inner > .item {
+   height: 500px;
+}
+.carousel {
+  width:650px;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  size:cover;
+
+
+}
+.carousel-caption {
+    bottom: 75px;
+    padding-bottom: 0px;
+}
+
+
+#carouselExampleCaptions img {
+width: 100px;
+height: 400px;
+
+/*max-height: 405px;*/
+
+}
+
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 10px;
+    left: 10px;
+    min-height: 200px;
+}
+.carousel-control-prev{
+  height: 400px;
+  color:grey;
+
+
+}
+.carousel-control-next{
+  height: 400px;
+
+
+
+
+
+
+}

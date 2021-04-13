@@ -1,0 +1,52 @@
+
+* {
+}
+
+#home-parallax {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13% 0;
+    background:url("res/blocky-fields.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contact-us-parallax {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13% 0;
+    background:url("res/blocky-fields2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax blockquote {
+  border-radius: 5px;
+  padding:  10px;
+  color: white;
+  font-size: 1.8em;
+  background-color: rgba(0,30,30,0.4);
+}
+
+.parallax blockquote .blockquote-footer {
+  color: white;
+  font-style: italic;
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,0.6);
+}
+
+#profiles {
+  max-width: 600px;
+}
+
+.card-body h5 {
+  font-style: italic;
+}
