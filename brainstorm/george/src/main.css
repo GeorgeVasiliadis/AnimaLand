@@ -1,3 +1,7 @@
+
+* {
+}
+
 #home-parallax {
     display:flex;
     justify-content: center;
@@ -39,7 +43,10 @@
   background-color: rgba(0,0,0,0.6);
 }
 
-.card-body a {
-  position: absolute;
-  bottom: 8px;
+#profiles {
+  max-width: 600px;
+}
+
+.card-body h5 {
+  font-style: italic;
 }
