@@ -1,15 +1,20 @@
 body {
 /*  background-color: #f2ffe6;*/
-font-style: normal;
+
+  font-style: normal;
 /*  background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg&ga=GA1.2.1356500412.1617235200");*/
 /*background-image: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/179609-plain-white-texture-background.jpg");*/
 
 }
-.banner{
-  background: url("https://cf.ltkcdn.net/greenliving/images/orig/225070-1600x1067-Environmental-Pollution-Concept.jpg");
-  height: 60vh;
-  background-size: cover;
+#banner{
+    background: url("https://cf.ltkcdn.net/greenliving/images/orig/225070-1600x1067-Environmental-Pollution-Concept.jpg")no-repeat center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28em;
 }
+
 
 p {
   margin-left: 10px;
@@ -26,9 +31,17 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 0.5px;
 
 }
+
+/*h1 {
+    font-size: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 1px;
+    color: white;
+    text-align: center;
+}*/
 h1 {
   text-align: center;
-  padding-top: 180px;
+  padding-top: 10px;
   font-size: 80px;
   font-space: 1px;
   color: white;
@@ -52,14 +65,16 @@ h4{
     color: #003300;
 }
 
-.content{
-   padding-left: 200px;
-   padding-right: 200px;
-}
 
-.row{
+
+.zoe{
    padding-top: 70px;
 }
+
+
+
+
+
 /*For the carousel*/
 .carousel-inner > .item {
    height: 500px;
@@ -106,6 +121,10 @@ height: 400px;
 }
 .carousel-control-next{
   height: 400px;
+
+
+
+
 
 
 }
