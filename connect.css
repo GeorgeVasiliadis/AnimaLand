@@ -1,0 +1,58 @@
+
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("res/elephant-1822636_1921.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top:20px;
+  background-color: white;
+  padding-left:100px;
+  padding-right:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0      rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+#h1-login, #h1-register {
+  color: #CD853F;
+ /* font-style: italic; */
+  font-family: Georgia, sans-serif;
+  padding-top: 10px;
+}
+
+input[type=submit] {
+  width: 100%;
+  border: none;
+  background-color: #FFDAB9;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:focus {
+  outline: 3px solid #CD853F;
+}
+
+input[type=text],input[type=password],input[type=email] {
+  border: none;
+  border-bottom: 2px solid #CD853F;
+  outline: none;
+}
