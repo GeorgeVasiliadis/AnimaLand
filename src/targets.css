@@ -1,51 +1,34 @@
-#mainimage {
-  padding: 100px;
-  background:  url(https://i.postimg.cc/XJMrKL40/tree-3822149-1920.jpg);
-  background-repeat: no-repeat;
+#banner{
+  background: url('https://i.postimg.cc/XJMrKL40/tree-3822149-1920.jpg') no-repeat center fixed;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28em;
 }
-#mainimage-text {
-  color:white;
-  text-align:center;
-  font-size:100px;
-  filter: nofilter;
-}
-#intro
-{
+
+
+#h1-targets {
   text-align: center;
-  font-size: 25px;
+  font-size: 5em;
+  color:white;
+}
+/*This is for the spaces on the rows in the targets and threats*/
+.thr-trg{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-/*vazw tis eikones deksia kai aristera apo to keimeno kai to keimeno sto plai*/
-.paraimageleft{
-  float: left;
-  width: 25.33%;
-  /*isws na ths dwsw kai ligo height*/
-  padding: 5px;/*nomizw de xreiazetai*/
+.hd-targets{
+  color: #003300;
 
 }
-.paraimageright{
-  float: right;
-  width: 25.33%;
-  padding: 5px;
+p {
+  color: #003300;
+
 }
-.textleftandright{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px;
-  margin-left: 50px;
-  font-size: 30px;
+#intro-trg{
+  padding-bottom:2px;
+    padding-top:15px;
 }
 
-/*h paragrafos deksia h aristera ths eikonas:*/
-.paratext{
-  margin-top: 50px;
-  margin-bottom: 70px;
-  margin-right: 50px;
-  margin-left: 50px;
-  font-size:25px;
-}
-
-.para{
-  border-bottom: 1.5px solid lightgrey;
-}
