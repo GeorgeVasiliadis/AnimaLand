@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6 {
     color: white;
     text-align: center;
 }*/
-h1 {
+#h1-threats {
   text-align: center;
   padding-top: 10px;
   font-size: 80px;
@@ -67,20 +67,18 @@ h4{
 
 
 
-.row{
-   padding-top: 70px;
+.thr-trg{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
-
-
-
 
 /*For the carousel*/
 .carousel-inner > .item {
-   height: 500px;
+   height: 600px;
 }
+
 .carousel {
-  width:650px;
+  width:750px;
   height:400px;
   margin-left: auto;
   margin-right: auto;
@@ -89,14 +87,17 @@ h4{
 
 }
 .carousel-caption {
-    bottom: 75px;
-    padding-bottom: 0px;
+
+  bottom:100px;
+
+
 }
 
 
 #carouselExampleCaptions img {
 width: 100px;
-height: 400px;
+height: 440px;
+
 
 /*max-height: 405px;*/
 
@@ -104,6 +105,7 @@ height: 400px;
 
 .carousel .carousel-item {
   height: 500px;
+
 }
 
 .carousel-item img {
@@ -113,6 +115,8 @@ height: 400px;
     left: 10px;
     min-height: 200px;
 }
+
+/*for the buttons to change the images*/
 .carousel-control-prev{
   height: 400px;
   color:grey;
