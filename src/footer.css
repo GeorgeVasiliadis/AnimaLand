@@ -1,7 +1,7 @@
 
 /*FOOTER*/
 
-footer {
+body > footer {
   background: #16222A;
   /*
   background: -webkit-linear-gradient(59deg, #D2B48C, #FFE4C4);
@@ -11,13 +11,13 @@ footer {
 
 }
 
-footer a {
+body > footer a {
   color: #fff;
   font-size: 15px; /*gia ta grammata stis link lists*/
   transition-duration: 0.2s;
 }
 
-footer a:hover {
+body > footer a:hover {
   color: #FA944B; /*to portokali xrwma otan akoumpaw sta link lists*/
   text-decoration: none;
 }
