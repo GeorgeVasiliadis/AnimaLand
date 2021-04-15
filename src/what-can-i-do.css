@@ -13,3 +13,7 @@
   text-align: center;
   font-size: 5em;
 }
+
+.org {
+   list-style-type: circle;
+}
