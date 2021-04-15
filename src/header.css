@@ -4,18 +4,17 @@
     border-color:#f2ffe6;
     margin: 0 !important;
     padding: 10px;
-    height: 75px;
+    height: 80px;
   }
 
 .navbar .navbar-nav li a{
   color:#003300 !important;
-
   font-size: 15px;
   padding: 5px;
   letter-spacing: 1px;
   padding-right: 8px;
   padding-left: 8px;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 
 .navbar .navbar-brand{
@@ -23,7 +22,7 @@
   font-weight: bold;
   letter-spacing: 2px;
   padding: 15px;
-  padding-right:120px;
+  padding-right:125px;
 
 }
 .navbar .navbar-brand:hover{
@@ -37,6 +36,7 @@
 .navbar .nav-item .dropdown-menu .dropdown-item{
   color:#003300 !important;
 }
+
 /*the distance between the "title" in navbar*/
 .navbar-nav > li{
   margin-left:20px;
@@ -72,6 +72,10 @@
   padding-top: 2px;
   padding-bottom: 2px;
 
+}
+.ml-auto{
+  padding-top: 0px;
+  padding-bottom: 12px;
 }
 /*for the icons*/
 svg {
