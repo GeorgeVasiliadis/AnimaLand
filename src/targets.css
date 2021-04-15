@@ -14,19 +14,12 @@
   color:white;
 }
 /*This is for the spaces on the rows in the targets and threats*/
-.thr-trg{
+/*.thr-trg{
   padding-top: 30px;
   padding-bottom: 30px;
-}
+}*/
 
-.hd-targets{
-  color: #003300;
 
-}
-p {
-  color: #003300;
-
-}
 #intro-trg{
   padding-bottom:2px;
     padding-top:15px;
