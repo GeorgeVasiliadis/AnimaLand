@@ -12,7 +12,6 @@
 #h1-signPetition {
   text-align: center;
   font-size: 5em;
-
 }
 
 
@@ -71,13 +70,17 @@ input[type=text],input[type=email], select {
 	color: #F8F8FF;
 }
 
-a:link {
+.petition > a:link {
 	text-decoration: none;
 
 }
 
-a:hover {
+.petition > a:hover {
 	font-size: 1.1em;
+}
+
+.issue {
+	border-left: solid #008B8B;
 }
 
 
