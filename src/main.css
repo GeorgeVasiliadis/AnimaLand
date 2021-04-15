@@ -22,6 +22,10 @@
     background-attachment: fixed;
 }
 
+#profiles {
+  max-width: 600px;
+}
+
 .parallax blockquote {
   border-radius: 5px;
   padding:  10px;
@@ -39,10 +43,13 @@
   background-color: rgba(0,0,0,0.6);
 }
 
-#profiles {
-  max-width: 600px;
-}
-
 .card-body h5 {
   font-style: italic;
+}
+
+/* Fix the issue on right-placed images*/
+@media only screen and (min-width: 576px){
+  .right-image {
+    flex-direction: row-reverse;
+  }
 }
