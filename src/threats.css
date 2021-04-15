@@ -1,11 +1,3 @@
-body {
-/*  background-color: #f2ffe6;*/
-
-  font-style: normal;
-/*  background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg&ga=GA1.2.1356500412.1617235200");*/
-/*background-image: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/179609-plain-white-texture-background.jpg");*/
-
-}
 #banner{
     background: url('res/threats1.jpg')no-repeat center fixed;
     background-size: cover;
@@ -22,62 +14,13 @@ body {
   font-size: 80px;
   font-space: 1px;
   color: white;
+
+}
+ .carousel-caption {
+  padding-top: 100px;
 }
 
 
-/*For the carousel*/
-.carousel-inner > .item {
-   height: 600px;
-}
-
-.carousel {
-  width:750px;
-  height:400px;
-  margin-left: auto;
-  margin-right: auto;
-  size:cover;
-
-
-}
-.carousel-caption {
-
-  bottom:100px;
-
-
-}
-
-
-#carouselExampleCaptions img {
-width: 100px;
-height: 440px;
-
-
-/*max-height: 405px;*/
-
-}
-
-.carousel .carousel-item {
-  height: 500px;
-
-}
-
-.carousel-item img {
-    position: absolute;
-    object-fit:cover;
-    top: 10px;
-    left: 10px;
-    min-height: 200px;
-}
-
-/*for the buttons to change the images*/
-.carousel-control-prev{
-  height: 400px;
-  color:grey;
-
-
-}
-.carousel-control-next{
-  height: 400px;
 
 
 
