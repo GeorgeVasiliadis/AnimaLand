@@ -46,6 +46,9 @@
 .navbar-nav mx-auto text-center{
   padding-left: 100px;
 }*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
 .navbar .nav-item .dropdown-menu .dropdown-item:hover{
   color:green !important;
   background-color:white;
