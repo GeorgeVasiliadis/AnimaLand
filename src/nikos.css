@@ -29,6 +29,11 @@
   padding-bottom:2px;
     padding-top:15px;
 }
+@media only screen and (min-width: 576px){
+  .right-image {
+    flex-direction: row-reverse;
+  }
+}
 
 
 /*FOOTER*/
