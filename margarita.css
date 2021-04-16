@@ -1,0 +1,120 @@
+/*For What Can I Do*/
+
+#banner-wcIdo{
+  background: url('res/nature-conservation-480985_1920.jpg') no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28em;
+}
+
+
+#h1-WhatCanIDo {
+  text-align: center;
+  font-size: 5em;
+}
+
+.org {
+   list-style-type: circle;
+}
+
+@media only screen and (min-width: 576px){
+	.right-image {
+		flex-direction: row-reverse;
+	}
+}
+
+/*For sign a petition and all the sign the petition*/
+#banner-petition{
+  background: url('res/mountains-190055_1280.jpg') no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28em;
+}
+
+
+#h1-signPetition {
+  text-align: center;
+  font-size: 5em;
+}
+
+
+.petition-form input[type=submit] {
+  width: 65%;
+  height: 20%;
+  border: none;
+  background-color: #FAEBD7;
+  padding: 5%;
+  text-decoration: none;
+  margin: 4px 1px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+
+.petition-form input[type=submit]:focus {
+	outline: 3px solid #FFE4C4;
+	border-radius: 4px;
+}
+
+.petition-form input[type=text]:focus {
+  border: 3px solid #D3D3D3;
+  border-radius: 4px;
+}
+
+
+
+.petition-form input[type=email]:focus {
+  border: 3px solid #D3D3D3;
+  border-radius: 4px;
+}
+
+
+
+.petition-form input[type=text],input[type=email], select {
+  width: 65%;
+  padding: 3.5%;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: #FFE4C4;
+}
+
+.petition {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+
+}
+
+
+.description {
+	background-color: #20B2AA;
+	width: 100%;
+	height: 40%;
+	font-size: 2em;
+	color: #F8F8FF;
+}
+
+.petition > a:link {
+	text-decoration: none;
+
+}
+
+.petition > a:hover {
+	font-size: 1.1em;
+}
+
+.issue {
+	border-left: solid #008B8B;
+}
+
+
+#goal {
+	color: #008B8B;
+	font-size: 2.5em;
+	font-weight: 500;
+	
+}
