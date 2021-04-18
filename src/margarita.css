@@ -42,7 +42,7 @@
 }
 
 
-.petition-form input[type=submit] {
+.petition-form  input[type=submit] {
   width: 65%;
   height: 20%;
   border: none;
@@ -74,7 +74,7 @@
 
 
 
-.petition-form input[type=text],input[type=email], select {
+.petition-form input[type=text] {
   width: 65%;
   padding: 3.5%;
   margin-bottom: 4%;
@@ -82,6 +82,16 @@
   border-radius: 4px;
   outline: #FFE4C4;
 }
+
+.petition-form  input[type=email] {
+  width: 65%;
+  padding: 3.5%;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: #FFE4C4;
+}
+
 
 .petition {
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 0, 0.3);
@@ -118,3 +128,57 @@
 	font-weight: 500;
 	
 }
+
+/*Register and Log In*/
+
+.register{
+  background: url('res/elephant-1822636_1921.jpg') no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:41em;
+}
+
+.form-register {
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 0.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+#h1-login, #h1-register {
+  color: #CD853F;
+ /* font-style: italic; */
+  font-family: Georgia, sans-serif;
+  /*padding-top: 10px;*/
+}
+
+.connect input[type=submit] {
+  width: 100%;
+  border: none;
+  background-color: #FFDAB9;
+  padding: 10%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.connect input[type=submit]:focus {
+  outline: 3px solid #CD853F;
+}
+
+.connect input[type=text],input[type=password] {
+  border: none;
+  border-bottom: 2px solid #CD853F;
+  outline: none;
+}
+
+.connect input[type=email] {
+  border: none;
+  border-bottom: 2px solid #CD853F;
+  outline: none;
+}
+
