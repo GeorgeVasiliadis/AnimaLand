@@ -11,38 +11,26 @@
     <link rel="stylesheet" href="lib/fa/5.15/css/all.css">
     <link rel="stylesheet" href="lib/fa/4.7/css/font-awesome.min.css">
   </head>
-
   <body>
-
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
       <a class="navbar-brand" href="index.html">
-        <div class="container">
-          <div class="row">
-            <div class="col my-auto">
-              <img src="res/AnimaLand-logo.svg" width="50" height="50">
-            </div>
-            <div class="col mt-auto pl-0">
-              <h3 class="mb-0 pt-4">AnimaLand</h3>
-            </div>
-          </div>
-        </div>
+      <img src="res/AnimaLand-logo-text.svg" height="40" alt="AnimaLand logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">
-              Home<span class="sr-only">(current)</span>
+            Home<span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="threats.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Threats
+            <a class="nav-link dropdown-toggle" href="threats.html" id="actionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Threats
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu" aria-labelledby="actionDropdown">
               <a class="dropdown-item" href="threats.html">All Threats</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="threats.html#onPollution">Pollution</a>
@@ -57,19 +45,30 @@
             <a class="nav-link" href="targets.html">Targets</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="what-can-i-do.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action
+            <a class="nav-link dropdown-toggle" href="what-can-i-do.html" id="threatsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu" aria-labelledby="threatsDropdown">
               <a class="dropdown-item" href="what-can-i-do.html">What Can I Do</a>
               <a class="dropdown-item" href="sign-a-petition.html">Sign A Petition</a>
-              </div>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-success mx-1" type="submit">
+            <img src="res/sign-up.svg" height="20" alt="Sing up icon">
+            Sign Up
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-success mx-1" type="submit">
+            <img src="res/sign-in.svg" height="20" alt="Sign in icon">
+            Sign In
+            </button>
           </li>
         </ul>
       </div>
     </nav>
   </body>
-
 </html>
