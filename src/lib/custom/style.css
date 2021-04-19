@@ -439,6 +439,40 @@ input[type=password] {
 }
 
 /* --------------------------------------------------------*/
+/* --------------- Targets - Related ----------------------*/
+/* --------------------------------------------------------*/
+
+#banner {
+	background: url('../../res/tree.jpg') no-repeat center fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 28em;
+}
+
+#h1-targets {
+	text-align: center;
+	font-size: 5em;
+	color: white;
+}
+
+
+/*This is for the spaces on the rows in the targets and threats*/
+
+
+/*.thr-trg{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}*/
+
+#intro-trg {
+	padding-bottom: 2px;
+	padding-top: 15px;
+}
+
+
+/* --------------------------------------------------------*/
 /* --------------------- General Issues -------------------*/
 /* --------------------------------------------------------*/
 
