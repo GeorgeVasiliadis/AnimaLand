@@ -1,6 +1,6 @@
 
 #banner{
-  background: url('res/mountains-190055_1280.jpg') no-repeat center fixed;
+  background: url('res/mountains.jpg') no-repeat center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -89,5 +89,5 @@ input[type=text],input[type=email], select {
 	color: #008B8B;
 	font-size: 2.5em;
 	font-weight: 500;
-	
+
 }

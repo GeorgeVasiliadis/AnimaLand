@@ -5,7 +5,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("elephant-1822636_1921.jpg");
+  background-image: url("res/elephant.jpg");
 
   /* Full height */
   height: 100%;
@@ -56,4 +56,3 @@ input[type=text],input[type=password],input[type=email] {
   border-bottom: 2px solid #CD853F;
   outline: none;
 }
-

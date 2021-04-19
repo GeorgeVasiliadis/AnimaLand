@@ -1,7 +1,7 @@
 /*For What Can I Do*/
 
 #banner-wcIdo{
-  background: url('res/nature-conservation-480985_1920.jpg') no-repeat center fixed;
+  background: url('res/nature-conservation.jpg') no-repeat center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
 
 /*For sign a petition and all the sign the petition*/
 #banner-petition{
-  background: url('res/mountains-190055_1280.jpg') no-repeat center fixed;
+  background: url('res/mountains.jpg') no-repeat center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -126,13 +126,13 @@
 	color: #008B8B;
 	font-size: 2.5em;
 	font-weight: 500;
-	
+
 }
 
 /*Register and Log In*/
 
 .register{
-  background: url('res/elephant-1822636_1921.jpg') no-repeat center fixed;
+  background: url('res/elephant.jpg') no-repeat center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -181,4 +181,3 @@
   border-bottom: 2px solid #CD853F;
   outline: none;
 }
-

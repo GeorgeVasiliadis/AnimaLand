@@ -1,6 +1,6 @@
 #mainimage {
   padding: 100px;
-  background:  url(https://i.postimg.cc/XJMrKL40/tree-3822149-1920.jpg);
+  background:  url("res/tree.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

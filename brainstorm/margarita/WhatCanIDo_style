@@ -9,14 +9,14 @@
 
 
 .banner{
-  background: url('https://cdn.pixabay.com/photo/2018/04/04/13/38/nature-3289812__340.jpg') no-repeat center fixed;
+  background: url('res/hand-with-globe1.jpg') no-repeat center fixed;
   background-size: cover;
   height: 60vh;
 }
 
 h1 {
-  text-align: center; 
-  padding-top: 100px; 
+  text-align: center;
+  padding-top: 100px;
   font-size: 80px;
   font-space: 1px;
 }
