@@ -1,309 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <link rel="stylesheet" href="header.css">
-      <link rel="stylesheet" href="lib/css/bootstrap.css">
-      <link rel="stylesheet" href="margarita.css">
-      <script src="lib/js/jquery.min.js"></script>
-      <script src="lib/js/bootstrap.min.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <link rel="stylesheet" href="footer.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-      <title>Animaland-What Can I Do</title>
-   </head>
-   <body>
-      <!-- Here goes the HEADER. Copy on! -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <a class="navbar-brand" href="index.html">AnimaLand</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="threats.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Threats
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" href="#">Pollution</a>
-                     <a class="dropdown-item" href="#">Introduced species</a>
-                     <a class="dropdown-item" href="#">Genetic Modification</a>
-                     <a class="dropdown-item" href="#">Deforastation-Desertification</a>
-                     <a class="dropdown-item" href="#">Diseases</a>
-                     <a class="dropdown-item" href="#">Endangered species</a>
-                  </div>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="targets.html">Targets</a>
-               </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Take action
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" href="what-can-i-do.html">What can I do?</a>
-                     <a class="dropdown-item" href="sign-a-petition.html">Sign a petition</a>
-                  </div>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="contact-us.html">Contact</a>
-               </li>
-            </ul>
-            <!--Sign up/Login-->
-            <ul class="nav navbar-nav ml-auto">
-               <li class="nav-item">
-                  <a class="nav-link" href="register.html">
-                     <button  class="btn btn-success btn-sm" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
-                           <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                           <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-                        </svg>
-                        Sign up
-                     </button>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="login.html">
-                     <button  class="btn btn-success btn-sm" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                           <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                        </svg>
-                        Sign in
-                     </button>
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </nav>
-      <!-- End of HEADER. Copy off! -->
-      <!-- Banner -->
-      <div id="banner-wcIdo" class="container-fluid w-100">
-         <div class="row">
-            <div class="col text-center align-middle">
-               <h1 id="h1-WhatCanIDo">What Can I Do</h1>
+  <head>
+    <title>What Can I Do</title>
+    <link rel="icon" href="res/AnimaLand-logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DO NOT CHANGE ORDER ON THE FOLLOWING -->
+    <!-- Dependencies -->
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/fa/5.15/css/all.css">
+    <link rel="stylesheet" href="lib/fa/4.7/css/font-awesome.min.css">
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="lib/custom/style.css">
+  </head>
+  <body>
+    <!-- Here goes the SCROLL. Copy on!-->
+    <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="lib/custom/custom.js"></script>
+    <!-- End of SCROLL. Copy off! -->
+    <!-- Here goes the HEADER. Copy on! -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+      <img src="res/AnimaLand-logo-text.svg" height="50" alt="AnimaLand logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+            Home<span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="threats.html" id="actionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Threats
+            </a>
+            <div class="dropdown-menu" aria-labelledby="actionDropdown">
+              <a class="dropdown-item" href="threats.html">All Threats</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="threats.html#onPollution">Pollution</a>
+              <a class="dropdown-item" href="threats.html#onIntroducedSpecies">Introduced Species</a>
+              <a class="dropdown-item" href="threats.html#onGeneticModification">Genetic Modification</a>
+              <a class="dropdown-item" href="threats.html#onDeforastasionDesertification">Deforastasion - Desertification</a>
+              <a class="dropdown-item" href="threats.html#onDiseases">Diseases</a>
+              <a class="dropdown-item" href="threats.html#onEndangeredSpecies">Endangered Species</a>
             </div>
-         </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="targets.html">Targets</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="what-can-i-do.html" id="threatsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action
+            </a>
+            <div class="dropdown-menu" aria-labelledby="threatsDropdown">
+              <a class="dropdown-item" href="what-can-i-do.html">What Can I Do</a>
+              <a class="dropdown-item" href="sign-a-petition.html">Sign A Petition</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success" href="register.html" role="button">
+            <img src="res/sign-up.svg" height="15" alt="Sign up icon">
+            Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success" href="login.html" role="button">
+            <img src="res/sign-in.svg" height="15" alt="Sign in icon">
+            Sign In</a>
+          </li>
+        </ul>
       </div>
-      <!--Content-->
-      <div class="container my-auto">
-         <div class="container-fluid w-75 py-5">
-            <div class="row right-image d-flex">
-               <div class="col-md-4 col-sm-4 my-auto">
-                  <img class="img-fluid shadow" src="res/nature.jpg" alt="recycle">
-               </div>
-               <div class="col-md-8 col-sm-8">
-                  <h3 class="py-2">Reduce, reuse and recycle</h3>
-                  <p> A simple way to protect the environment is by recycling, reducing your waste and consumption, and reuse your stuff. You can achieve that by:</p>
-                  <ul>
-                     <li>Replacing one use plastic objects with reusable ones such as cups, straws, bags, forks, knifes, plates made out of paper, glass, metal and natural ingredients.</li>
-                     <li>Fix your broken stuff and don’t throw it away immediately. Keep using stuff as long as you can.</li>
-                     <li>Start recycling everything you can and in the right way. For example, batteries and electronic devices are being recycled separately from other materials.</li>
-                     <li>Buy second hand and don’t support large fashion companies and industries. The fashion industry produces 10% of all humanity's carbon emissions, is the second-largest consumer of the world's water supply.</li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <hr class="w-75">
-         <div class="container-fluid w-75 py-5">
-            <div class="row">
-               <div class="col-md-4 col-sm-4 my-auto">
-                  <img  class="img-fluid shadow" src="res/city-bike.jpg" alt="bike">
-               </div>
-               <div class="col-md-8 col-sm-8">
-                  <h3 class="py-2">Use public transport, bike and walking</h3>
-                  <p> Private vehicles such as cars are one of the <a href="https://sciencing.com/effects-car-pollutants-environment-23581.html">biggest causes of air pollution</a>, something that affects farming, water quality, human health, natural landscapes, wildlife and sea levels.
-                     What we can do is take the public transport more (bus, metro, train) , walk more, use our bike to move around, share our car and choose a car that consumes less energy. That will definitely make as healthier, happier and save some money too!
-                  </p>
-               </div>
-            </div>
-         </div>
-         <hr class="w-75">
-         <div class="container-fluid w-75 py-5">
-            <div class="row right-image d-flex">
-               <div class="col-md-4 col-sm-4 my-auto">
-                  <img  class="img-fluid shadow" src="res/vegetables.jpg" alt="vegetables">
-               </div>
-               <div class="col-md-8 col-sm-8">
-                  <h3 class="py-2">Change the way you eat</h3>
-                  <p> We are what we eat! , they say. So we should be selective with our food. The food industry has a considerable impact on the environment. Food production contributes,
-                     for example, to climate change, eutrophication and acid rain, as well as the depletion of biodiversity. It is also a considerable drain on other resources, such as nutrients, land area, energy, and water. What we should do is:
-                  </p>
-                  <ul>
-                     <li> Eat less meal and diary products. Meat and diary production is responsible for 14% of global climate-changing emissions.</li>
-                     <li>Buy local products and support local producers and farmers.</li>
-                     <li>Don't waste food for no reason.</li>
-                     <li>Grow your own food such as vegetables, fruits, nuts etc. by planting seeds in your garden.</li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <hr class="w-75">
-         <div class="container-fluid w-75 py-5">
-            <div class="row">
-               <div class="col-md-4 col-sm-4 my-auto">
-                  <img  class="img-fluid shadow" src="res/light-bulb.jpg" alt="lamp">
-               </div>
-               <div class="col-md-8 col-sm-8">
-                  <h3 class="py-2">Save energy and water</h3>
-                  <p> Reducing energy and water use limits the number of carbon emissions in the environment and produces a higher quality of life. Reduced emissions result
-                     in cleaner air quality. Also, it helps create a healthier planet, or at least helps sustain the resources we already have. After all it helps us save our money. All we have to do is:
-                  </p>
-                  <ul>
-                     <li>Turn off the lights, turn off and unplug the devices when we don't need them.</li>
-                     <li>Take short showers instead of long baths.</li>
-                     <li>Turn off the tap when we are brushing our teeth or doing the dishes.</li>
-                     <li>When buying new devices choose the ones that consume less energy.</li>
-                     <li>Replace our energy at home with renewable sources of energy such us aeolian, solar power or put some photovoltaics. </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <hr class="w-75">
-         <div class="container-fluid w-75 py-5">
-            <div class="row right-image d-flex">
-               <div class="col-md-4 col-sm-4 my-auto">
-                  <img src="res/forest2.jpg"  class="img-fluid shadow" alt="forests">
-               </div>
-               <div class="col-md-8 col-sm-8">
-                  <h3 class="py-2">Protect the forests</h3>
-                  <p> The equivalent to 1 football pitch of forest is lost every second. Annually, WWF estimates that around 8 million hectares of forest are lost, and as a result,
-                     17% of the Amazonian forest has been lost over the last 50 years, together with other forestal areas in Indonesia or Congo. It's your responsibility to save our forests and
-                     some ways to achieve that are:
-                  </p>
-                  <ul>
-                     <li>Use tree-free products such as bamboo products, bamboo paper towels, toothbrushes and toilet paper. </li>
-                     <li>Buy rain forest alliance certified products which support sustainable forest management and allow forest-reliant communities to thrive.</li>
-                     <li>Plant a tree - According to the National Wildlife Federation, just one tree will absorb more than one ton of carbon dioxide in its lifetime.
-                        That’s equivalent to more than 2,000 miles driven by the average car.
-                     </li>
-                     <li>Enjoy forests responsibly. Going out into nature and enjoying our forests for yourself is a big part of learning how to save trees.</li>
-                     <li>Don't waste unecessary paper and use both sides of paper</li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <hr class="w-75">
-         <div class="container-fluid w-75 py-5">
-            <div class="row">
-               <div class="col-md-4 col-sm-4 my-auto">
-                  <img src="res/volunteers.png"  class="img-fluid shadow" alt="forests">
-               </div>
-               <div class="col-md-8 col-sm-8">
-                  <h3 class="py-2">Volunteer and donate</h3>
-                  <p> The best way to help with making a change in the world is by taking action. There are hundreds of organizations out there who need your help and support. By volunteering
-                     not only you will contribute to their hard work but you will also feel happy, grateful and fulfil. Whenever you can donate some money to these organizations because that is
-                     very important for them to keep acting. Team work makes the dream work!
-                  </p>
-               </div>
-            </div>
-         </div>
-         <hr class="w-75">
-         <div class="container-fluid w-75 py-5">
-            <div class="row right-image d-flex">
-               <div class="col-md-4 col-sm-4 my-auto">
-                  <img src="res/hands.jpg"  class="img-fluid shadow" alt="hands">
-               </div>
-               <div class="col-md-8 col-sm-8">
-                  <h3 class="py-2">Invite your friends</h3>
-                  <p> It would be awesome if you could get others involved in this journey too. Try to inform your friends about what's going on in our planet right now, about the threats
-                     it has to deal with and about how important it is to take action and change our world. You can start a project with them or do actions like cleaning a park or a beach and go
-                     to protests. Spread this issue among your friends, family, and community and manage to inspire them.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <hr class="w-75">
-         <div class="container-fluid w-75 py-5">
-            <h3 class="py-2"> Here are some orginizations you can support</h3>
-            <ul class="org">
-               <li><a href="https://treefoundation.org/">Tree Foundation</a></li>
-               <li><a href="https://www.greenpeace.org/greece/">Greenpeace</a></li>
-               <li><a href="https://www.worldwildlife.org/">World Wild Life</a></li>
-               <li><a href="https://www.arcturos.gr/">Arcturos</a></li>
-               <li><a href="https://www.nationalgeographic.com/">National Geographic</a></li>
-               <li><a href="https://friendsoftheearth.uk/">Friends Of The Earth</a></li>
-               <li><a href="https://www.iucnredlist.org/">IUCN</a></li>
-            </ul>
-         </div>
+    </nav>
+    <!-- End of HEADER. Copy off! -->
+    <!-- Banner -->
+    <div id="banner-wcIdo" class="container-fluid w-100">
+      <div class="row">
+        <div class="col text-center align-middle">
+          <h1 id="h1-WhatCanIDo">What Can I Do</h1>
+        </div>
       </div>
-      <!-- Here goes the FOOTER. Copy on! -->
-      <footer class="mainfooter" role="contentinfo">
-         <div class="footer-middle">
-            <div class="container">
-               <div class="row kyria">
-                  <div class="col-md-3 col-sm-6">
-                     <!--Column1-->
-                     <div class="footer-pad">
-                        <h4>About Us</h4>
-                        <p>We are a greek NGO team and our mision is to inform about the life on land and to encourage humans to take action.</p>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <!--Column1-->
-                     <div class="footer-pad">
-                        <h4>Get Help</h4>
-                        <ul class="list-unstyled">
-                           <li><a href="#">......</a></li>
-                           <li><a href="#">......</a></li>
-                           <li><a href="#">......</a></li>
-                           <li><a href="#">......</a></li>
-                           <li><a href="#">......</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <!--Column1-->
-                     <div class="footer-pad">
-                        <h4>Contact Us</h4>
-                        <ul class="list-unstyled">
-                           <li><i class="fas fa-map-marker-alt"></i><a href="#"> Aristotle University, Thessaloniki</a></li>
-                           <li>
-                              <i class="fas fa-phone"></i>
-                              <a href="#">
-                                 +306980808080
-                           </li>
-                           <li><i class="fas fa-envelope"></i><a href="#"> info@animaland.info</a></li>
-                           <li><i class="fab fa-skype"></i><a href="#">   Skype_id</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <h4>Follow Us</h4>
-                     <ul class="social-network social-circle">
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                     </ul>
-                     <div class="newslett">
-                        <form action="#" method="post">
-                           <input type="hidden" name="b_04285e61d5201add422fde7bd_5109d025a2" tabindex="-1" value="">
-                           <h4>Newsletter</strong></h4>
-                           <div class="input-group">
-                              <label><span class="sr-only">Email</span>
-                              <input class="input-group-field" id="email" type="email" placeholder="Email" name="EMAIL" aria-label="Enter email address"/>
-                              </label>
-                              <div class="input-group-button">
-                                 <input type="submit" class="button" value="SUBSCRIBE">
-                              </div>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
+    </div>
+    <!--Content-->
+    <div class="container my-auto">
+      <div class="container-fluid w-75 py-5">
+        <div class="row right-image d-flex">
+          <div class="col-md-4 col-sm-4 my-auto">
+            <img class="img-fluid shadow" src="res/nature.jpg" alt="recycle">
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3 class="py-2">Reduce, reuse and recycle</h3>
+            <p> A simple way to protect the environment is by recycling, reducing your waste and consumption, and reuse your stuff. You can achieve that by:</p>
+            <ul>
+              <li>Replacing one use plastic objects with reusable ones such as cups, straws, bags, forks, knifes, plates made out of paper, glass, metal and natural ingredients.</li>
+              <li>Fix your broken stuff and don’t throw it away immediately. Keep using stuff as long as you can.</li>
+              <li>Start recycling everything you can and in the right way. For example, batteries and electronic devices are being recycled separately from other materials.</li>
+              <li>Buy second hand and don’t support large fashion companies and industries. The fashion industry produces 10% of all humanity's carbon emissions, is the second-largest consumer of the world's water supply.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="w-75">
+      <div class="container-fluid w-75 py-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 my-auto">
+            <img  class="img-fluid shadow" src="res/city-bike.jpg" alt="bike">
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3 class="py-2">Use public transport, bike and walking</h3>
+            <p> Private vehicles such as cars are one of the <a href="https://sciencing.com/effects-car-pollutants-environment-23581.html">biggest causes of air pollution</a>, something that affects farming, water quality, human health, natural landscapes, wildlife and sea levels.
+              What we can do is take the public transport more (bus, metro, train) , walk more, use our bike to move around, share our car and choose a car that consumes less energy. That will definitely make as healthier, happier and save some money too!
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="w-75">
+      <div class="container-fluid w-75 py-5">
+        <div class="row right-image d-flex">
+          <div class="col-md-4 col-sm-4 my-auto">
+            <img  class="img-fluid shadow" src="res/vegetables.jpg" alt="vegetables">
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3 class="py-2">Change the way you eat</h3>
+            <p> We are what we eat! , they say. So we should be selective with our food. The food industry has a considerable impact on the environment. Food production contributes,
+              for example, to climate change, eutrophication and acid rain, as well as the depletion of biodiversity. It is also a considerable drain on other resources, such as nutrients, land area, energy, and water. What we should do is:
+            </p>
+            <ul>
+              <li> Eat less meal and diary products. Meat and diary production is responsible for 14% of global climate-changing emissions.</li>
+              <li>Buy local products and support local producers and farmers.</li>
+              <li>Don't waste food for no reason.</li>
+              <li>Grow your own food such as vegetables, fruits, nuts etc. by planting seeds in your garden.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="w-75">
+      <div class="container-fluid w-75 py-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 my-auto">
+            <img  class="img-fluid shadow" src="res/light-bulb.jpg" alt="lamp">
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3 class="py-2">Save energy and water</h3>
+            <p> Reducing energy and water use limits the number of carbon emissions in the environment and produces a higher quality of life. Reduced emissions result
+              in cleaner air quality. Also, it helps create a healthier planet, or at least helps sustain the resources we already have. After all it helps us save our money. All we have to do is:
+            </p>
+            <ul>
+              <li>Turn off the lights, turn off and unplug the devices when we don't need them.</li>
+              <li>Take short showers instead of long baths.</li>
+              <li>Turn off the tap when we are brushing our teeth or doing the dishes.</li>
+              <li>When buying new devices choose the ones that consume less energy.</li>
+              <li>Replace our energy at home with renewable sources of energy such us aeolian, solar power or put some photovoltaics. </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="w-75">
+      <div class="container-fluid w-75 py-5">
+        <div class="row right-image d-flex">
+          <div class="col-md-4 col-sm-4 my-auto">
+            <img src="res/forest2.jpg"  class="img-fluid shadow" alt="forests">
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3 class="py-2">Protect the forests</h3>
+            <p> The equivalent to 1 football pitch of forest is lost every second. Annually, WWF estimates that around 8 million hectares of forest are lost, and as a result,
+              17% of the Amazonian forest has been lost over the last 50 years, together with other forestal areas in Indonesia or Congo. It's your responsibility to save our forests and
+              some ways to achieve that are:
+            </p>
+            <ul>
+              <li>Use tree-free products such as bamboo products, bamboo paper towels, toothbrushes and toilet paper. </li>
+              <li>Buy rain forest alliance certified products which support sustainable forest management and allow forest-reliant communities to thrive.</li>
+              <li>Plant a tree - According to the National Wildlife Federation, just one tree will absorb more than one ton of carbon dioxide in its lifetime.
+                That’s equivalent to more than 2,000 miles driven by the average car.
+              </li>
+              <li>Enjoy forests responsibly. Going out into nature and enjoying our forests for yourself is a big part of learning how to save trees.</li>
+              <li>Don't waste unecessary paper and use both sides of paper</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="w-75">
+      <div class="container-fluid w-75 py-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 my-auto">
+            <img src="res/volunteers.png"  class="img-fluid shadow" alt="forests">
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3 class="py-2">Volunteer and donate</h3>
+            <p> The best way to help with making a change in the world is by taking action. There are hundreds of organizations out there who need your help and support. By volunteering
+              not only you will contribute to their hard work but you will also feel happy, grateful and fulfil. Whenever you can donate some money to these organizations because that is
+              very important for them to keep acting. Team work makes the dream work!
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="w-75">
+      <div class="container-fluid w-75 py-5">
+        <div class="row right-image d-flex">
+          <div class="col-md-4 col-sm-4 my-auto">
+            <img src="res/hands.jpg"  class="img-fluid shadow" alt="hands">
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3 class="py-2">Invite your friends</h3>
+            <p> It would be awesome if you could get others involved in this journey too. Try to inform your friends about what's going on in our planet right now, about the threats
+              it has to deal with and about how important it is to take action and change our world. You can start a project with them or do actions like cleaning a park or a beach and go
+              to protests. Spread this issue among your friends, family, and community and manage to inspire them.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="w-75">
+      <div class="container-fluid w-75 py-5">
+        <h3 class="py-2"> Here are some orginizations you can support</h3>
+        <ul class="org">
+          <li><a href="https://treefoundation.org/">Tree Foundation</a></li>
+          <li><a href="https://www.greenpeace.org/greece/">Greenpeace</a></li>
+          <li><a href="https://www.worldwildlife.org/">World Wild Life</a></li>
+          <li><a href="https://www.arcturos.gr/">Arcturos</a></li>
+          <li><a href="https://www.nationalgeographic.com/">National Geographic</a></li>
+          <li><a href="https://friendsoftheearth.uk/">Friends Of The Earth</a></li>
+          <li><a href="https://www.iucnredlist.org/">IUCN</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Here goes the FOOTER. Copy on! -->
+    <footer class="mainfooter">
+      <div class="footer-middle">
+        <div class="container">
+          <div class="row kyria">
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>About Us</h4>
+                <p>We are a greek NGO team and our mision is to inform about the life on land and to encourage humans to take action.</p>
+              </div>
             </div>
-            <div class="row">
-               <div class="col-md-12 copy">
-                  <p class="text-center">&copy; Copyright 2021 - ΑnimaLand.  All rights reserved.</p>
-               </div>
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Quick Links</h4>
+                <ul class="list-unstyled">
+                  <li><a href="contact-us.html">Contact</a></li>
+                  <li><a href="sign-a-petition.html">Sign a Petition</a></li>
+                </ul>
+              </div>
             </div>
-         </div>
-      </footer>
-      <!-- End of FOOTER. Copy off! -->
-   </body>
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Contact Us</h4>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/%CE%91%CF%81%CE%B9%CF%83%CF%84%CE%BF%CF%84%CE%AD%CE%BB%CE%B5%CE%B9%CE%BF+%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%AE%CE%BC%CE%B9%CE%BF+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7%CF%82/@40.6308283,22.9570337,17z/data=!3m1!4b1!4m5!3m4!1s0x14a838ff432792c9:0x15eefe1dc3e6c8e9!8m2!3d40.6308283!4d22.9592224"> Aristotle University, Thessaloniki</a></li>
+                  <li><i class="fas fa-phone"></i><a href="#"> +306980808080</a></li>
+                  <li><i class="fas fa-envelope"></i><a href="mailto:animaland21@gmail.com"> animaland21@gmail.com</a></li>
+                  <li><i class="fab fa-skype"></i><a href="https://join.skype.com/invite/CeFa0pduNUac">   Skype ID</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Follow Us</h4>
+              <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/AnimaLand21" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/animal-land-71617b210/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/animaland21/?fbclid=IwAR1kIXtEJ6Jf-cyqUUHVgbL97wBoRzK_fd9jpxZIAZtyHyeu8xeN7lsCRgs" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/LandAnima?fbclid=IwAR3wfvFTTvBR3Z5Kfn4lx13zOkw9nTAF-AaJSnPoIYiMseEiCONgt_9Q-QU" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+              <div class="newslett">
+                <form action="#" method="post">
+                  <input type="hidden" name="b_04285e61d5201add422fde7bd_5109d025a2" tabindex="-1" value="">
+                  <h4>Newsletter</h4>
+                  <div class="input-group">
+                    <label><span class="sr-only">Email</span>
+                    <input class="input-group-field" id="email" type="email" placeholder="Email" name="EMAIL" aria-label="Enter email address">
+                    </label>
+                    <div class="input-group-button">
+                      <input type="submit" class="button" value="SUBSCRIBE">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 copy">
+              <p class="text-center">&copy; Copyright 2021 - ΑnimaLand.  All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of FOOTER. Copy off! -->
+  </body>
 </html>
