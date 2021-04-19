@@ -60,3 +60,9 @@
   align-self: center;
   margin: 2px;
 }
+
+
+li a.btn {
+  font-size: 0.75em !important;
+  width: 90px;
+}
