@@ -66,3 +66,8 @@ li a.btn {
   font-size: 0.75em !important;
   width: 90px;
 }
+.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+  color:black !important;
+  background-color:white;
+
+}
