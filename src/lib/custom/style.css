@@ -442,7 +442,7 @@ input[type=password] {
 /* --------------- Targets - Related ----------------------*/
 /* --------------------------------------------------------*/
 
-#banner {
+#banner-targets {
 	background: url('../../res/tree.jpg') no-repeat center fixed;
 	background-size: cover;
 	display: flex;
