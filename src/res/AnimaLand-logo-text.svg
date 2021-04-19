@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="466.7674mm"
-   height="99.340767mm"
-   viewBox="0 0 466.76739 99.340773"
+   width="385mm"
+   height="100mm"
+   viewBox="0 0 385 100.00001"
    version="1.1"
    id="svg839"
    sodipodi:docname="AnimaLand-logo-text.svg"
@@ -36,9 +36,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="1066.6879"
-     inkscape:cy="311.45829"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="754.21755"
+     inkscape:cy="692.62223"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -47,7 +47,8 @@
      inkscape:window-height="1058"
      inkscape:window-x="2869"
      inkscape:window-y="448"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:lockguides="false" />
   <metadata
      id="metadata836">
     <rdf:RDF>
@@ -56,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,47 +65,52 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-27.842876,-153.19521)">
+     transform="translate(-27.842876,-176.91536)">
     <g
-       id="g864"
-       transform="matrix(0.65572453,0,0,0.65572453,30.92548,120.89303)">
+       id="g850"
+       transform="translate(10.690781)">
       <g
-         id="g858">
-        <path
-           style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 32.249292,199.25935 c 6.834224,0.0606 6.805363,-12.8244 7.467085,-26.28902 1.118422,-22.75748 1.053994,-25.12594 3.479585,-27.93423 m 0,0 c -9.929258,10.72862 -14.050028,11.74199 -25.422539,11.71747 -19.3032869,-0.0416 -33.252323,-45.58621 -4.81085,-47.57396 0,0 -22.3474614,-6.7439 -8.113498,-30.948148 8.806212,-14.974586 21.924345,-12.647786 30.965042,-1.792377 -12.8434,-31.338491 13.204301,-26.514832 25.390605,-23.252449 25.476233,6.820216 4.810847,24.856066 4.810847,24.856066 0,0 23.881652,-9.434842 34.210501,1.870882 9.13541,9.999411 1.11699,23.130336 -13.363472,29.399656 15.806132,-0.20911 23.857752,30.1458 12.430013,36.42138 -11.427738,6.27558 -18.734994,3.44268 -24.264659,2.12832 -5.757368,-1.36848 -13.594089,-6.94613 -10.664733,-11.95432 m 66.465261,7.88238 c -2.24708,-3.84182 -10.75805,-9.80278 -17.45105,-6.8251 -6.69301,2.97768 -14.679937,12.6008 -25.270935,12.5541 -10.590998,-0.0467 -17.616306,-4.56159 -21.714098,-2.81474 -4.097792,1.74685 -11.600356,7.6741 -11.742494,20.01673 -0.107776,9.35883 -0.872219,20.7977 15.909252,21.70303 14.611269,0.78825 7.780318,-10.83973 20.597119,-10.29127 10.621026,0.4545 18.287696,13.76048 26.308686,6.9504 7.1831,-6.09868 0.11351,-12.11062 -0.92988,-17.23725 -1.0992,-5.40086 2.52438,-11.43857 6.15366,-10.70192 3.82663,0.77671 6.06862,-0.40986 7.69387,-2.57094 2.16223,-2.87509 2.15481,-7.82031 0.44587,-10.78304"
-           id="path1420"
-           sodipodi:nodetypes="csccscscscsczscczzzccasssss" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 60.023704,186.02031 c 0,0 -2.572894,8.34298 0,10.91587 2.040572,2.04057 6.589356,2.01271 8.657412,0 2.080855,-2.02517 0.236235,-8.70779 0.236235,-8.70779"
-           id="path1424"
-           sodipodi:nodetypes="caac" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 119.1421,183.61489 c 0,0 3.49757,8.93304 0.80181,11.8179 -1.9703,2.1085 -6.58936,2.01271 -8.65741,0 -2.08086,-2.02517 -0.23624,-8.70779 -0.23624,-8.70779"
-           id="path1424-3"
-           sodipodi:nodetypes="caac" />
+         id="g864"
+         transform="matrix(0.42638088,0,0,0.42638088,35.958444,172.67593)">
+        <g
+           id="g858">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 32.249292,199.25935 c 6.834224,0.0606 6.805363,-12.8244 7.467085,-26.28902 1.118422,-22.75748 1.053994,-25.12594 3.479585,-27.93423 m 0,0 c -9.929258,10.72862 -14.050028,11.74199 -25.422539,11.71747 -19.3032869,-0.0416 -33.252323,-45.58621 -4.81085,-47.57396 0,0 -22.3474614,-6.7439 -8.113498,-30.948148 8.806212,-14.974586 21.924345,-12.647786 30.965042,-1.792377 -12.8434,-31.338491 13.204301,-26.514832 25.390605,-23.252449 25.476233,6.820216 4.810847,24.856066 4.810847,24.856066 0,0 23.881652,-9.434842 34.210501,1.870882 9.13541,9.999411 1.11699,23.130336 -13.363472,29.399656 15.806132,-0.20911 23.857752,30.1458 12.430013,36.42138 -11.427738,6.27558 -18.734994,3.44268 -24.264659,2.12832 -5.757368,-1.36848 -13.594089,-6.94613 -10.664733,-11.95432 m 66.465261,7.88238 c -2.24708,-3.84182 -10.75805,-9.80278 -17.45105,-6.8251 -6.69301,2.97768 -14.679937,12.6008 -25.270935,12.5541 -10.590998,-0.0467 -17.616306,-4.56159 -21.714098,-2.81474 -4.097792,1.74685 -11.600356,7.6741 -11.742494,20.01673 -0.107776,9.35883 -0.872219,20.7977 15.909252,21.70303 14.611269,0.78825 7.780318,-10.83973 20.597119,-10.29127 10.621026,0.4545 18.287696,13.76048 26.308686,6.9504 7.1831,-6.09868 0.11351,-12.11062 -0.92988,-17.23725 -1.0992,-5.40086 2.52438,-11.43857 6.15366,-10.70192 3.82663,0.77671 6.06862,-0.40986 7.69387,-2.57094 2.16223,-2.87509 2.15481,-7.82031 0.44587,-10.78304"
+             id="path1420"
+             sodipodi:nodetypes="csccscscscsczscczzzccasssss" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 60.023704,186.02031 c 0,0 -2.572894,8.34298 0,10.91587 2.040572,2.04057 6.589356,2.01271 8.657412,0 2.080855,-2.02517 0.236235,-8.70779 0.236235,-8.70779"
+             id="path1424"
+             sodipodi:nodetypes="caac" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 119.1421,183.61489 c 0,0 3.49757,8.93304 0.80181,11.8179 -1.9703,2.1085 -6.58936,2.01271 -8.65741,0 -2.08086,-2.02517 -0.23624,-8.70779 -0.23624,-8.70779"
+             id="path1424-3"
+             sodipodi:nodetypes="caac" />
+        </g>
       </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:39.5255px;line-height:1.85;font-family:sans-serif;letter-spacing:2.39754px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.205863"
+         x="111.53817"
+         y="240.7133"
+         id="text835"><tspan
+           id="tspan833"
+           x="111.53817"
+           y="240.7133"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.5255px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.205863"
+           sodipodi:role="line"
+           dx="0">AnimaLand</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text843"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect845);fill:#000000;fill-opacity:1;stroke:none;" />
+      <text
+         xml:space="preserve"
+         id="text849"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect851);fill:#000000;fill-opacity:1;stroke:none;" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:67.0613px;line-height:1.85;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.349277"
-       x="123.74293"
-       y="251.58638"
-       id="text835"><tspan
-         id="tspan833"
-         x="123.74293"
-         y="251.58638"
-         style="font-size:67.0613px;stroke-width:0.349277"
-         sodipodi:role="line">AnimaLand</tspan></text>
-    <text
-       xml:space="preserve"
-       id="text843"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect845);fill:#000000;fill-opacity:1;stroke:none;" />
-    <text
-       xml:space="preserve"
-       id="text849"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect851);fill:#000000;fill-opacity:1;stroke:none;" />
   </g>
 </svg>
