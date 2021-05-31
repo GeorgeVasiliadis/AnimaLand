@@ -1,0 +1,19 @@
+ {% extends "base.html" %}
+ {% block content %}
+<div class="container-fluid w-100 register">
+      <div class="row form-register">
+        <div class="col text-center align-middle">
+          <h1 id="h1-register" class="py-2">Welcome back!</h1>
+          <hr>
+          <form class="connect" action="index.html" autocomplete="on">
+            <label for="username"></label>
+            <input type="text" id="username" name="username" value="" placeholder="Username" required autofocus><br><br>
+            <label for="password"></label>
+            <input type="password" id="password" name="password" value="" placeholder="Password" required><br><br>
+            <input type="submit" value="Log in" class="my-2 py-4" style="width: 90%"><br><br>
+          </form>
+          <p>Not a member? <a href="register.html">Register</a> </p>
+        </div>
+      </div>
+    </div>
+{% endblock %}

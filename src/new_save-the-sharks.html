@@ -1,0 +1,58 @@
+{%  extends "base.html" %}
+{% block content %}
+    <div id="banner-petition" class="container-fluid w-100">
+      <div class="row">
+        <div class="col text-center align-middle">
+          <h1 id="h1-signPetition">Every sign matters</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <br><br><br>
+      <div class="container-fluid w-75">
+        <div class="row issue">
+          <div class="col">
+            <h2>Save the sharks</h2>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid w-75">
+        <div class="row issue">
+          <div class="col">
+            <p> <strong>100 million </strong> sharks are killed every year by the fishing industry. The reason why sharks are in trouble, includes a huge global market for shark products like meat and oil.
+            </p>
+            <p>The <strong>overfishing</strong> of sharks is driven by international trade that goes way beyond their fins. In recent years the shark meat trade has rapidly expanded and shark products
+              such as cartilage and oil all contribute to a market worth almost $ 1 billion per year. All the major fishing countries use destructive fishing practices that result in
+              the killing of up to 100 million sharks every year and are in large part responsible for the  <strong>70% decline </strong> in shark populations globally over the past 50 years.  Whether it’s
+              the use of Fish Aggregating Devices together with huge purse seine nets by France and Spain in tuna fisheries, or illegal driftnet use by Iran and Sri Lanka, or longlines by
+              South Korea, Japan, China or Spain (again!), or fishing for sport off the coast of the US, or even regular old trawling by practically every country with a coastline – shark
+              fishing takes place everywhere.
+            </p>
+            <p>When it comes to solving the problem of overfishing sharks, every country has got a role to play.  From implementing strict limits to how many can be caught, to agreeing
+              a target of at least  <strong>30% ocean protection </strong> by 2030.  We must create a network of ocean sanctuaries across the world that would act as nurseries and feeding grounds for sharks
+              and other wildlife, helping them recover from years of abuse.  Even countries without a coastline can help: implementing  <strong>strict rules </strong> around importing shark products like
+              shark oil (which can be found in plenty of cosmetics), or fish-based fertiliser (which often includes shark in the ingredients).
+              No single country, nor cuisine can be blamed for the staggering number of sharks being killed every single year – but  <strong>every country </strong> can step up to solve this problem.
+            </p>
+            <p> <strong>Take action </strong> now and help us to force countries to protect the sharks!</p>
+          </div>
+          <div class="col petition-form text-center ">
+            <div id="goal"> 5,000 </div>
+            <p> petitions goal </p>
+            <br>
+            <form action="sign-a-petition.html" autocomplete="on">
+              <label for="fname"></label>
+              <input type="text" id="fname" name="fname" value="" placeholder="First name" required><br>
+              <label for="lname"></label>
+              <input type="text" id="lname" name="lname" value="" placeholder="Last name" required><br>
+              <label for="email"></label>
+              <input type="email" id="email" name="email" value="" placeholder="Email" required><br>
+              <input type="submit" value="Sign now"><br>
+            </form>
+          </div>
+        </div>
+        <br><br>
+      </div>
+    </div>
+  {% endblock %}
