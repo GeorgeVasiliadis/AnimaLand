@@ -1,0 +1,511 @@
+/* --------------------------------------------------------*/
+/* --------------------- Parallax Stuff -------------------*/
+/* --------------------------------------------------------*/
+
+#home-parallax {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 13% 0;
+	background: url("../../res/blocky-fields.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#contact-us-parallax {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 13% 0;
+	background: url("../../res/blocky-fields2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.parallax blockquote {
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 1.8em;
+	background-color: rgba(0, 30, 30, 0.4);
+}
+
+.parallax blockquote .blockquote-footer {
+	color: white;
+	font-style: italic;
+}
+
+/* --------------------------------------------------------*/
+/* ------------------ Header/ Navigator -------------------*/
+/* --------------------------------------------------------*/
+
+.nav-item {
+	align-self: center;
+	margin: 2px;
+}
+
+li a.btn {
+	font-size: 0.75em !important;
+	width: 90px;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+	color: black !important;
+	background-color: white;
+}
+
+/* --------------------------------------------------------*/
+/* --------------------- Scroll To Top --------------------*/
+/* --------------------------------------------------------*/
+
+.to-top {
+	background: #00B74A;
+	position: fixed;
+	bottom: 16px;
+	z-index: 1000;
+	right: 32px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .4s;
+}
+
+.to-top.active {
+	bottom: 32px;
+	pointer-events: auto;
+	opacity: 1;
+	color: white;
+	text-decoration: none;
+}
+
+/* --------------------------------------------------------*/
+/* ------------------------ FOOTER ------------------------*/
+/* --------------------------------------------------------*/
+
+body>footer {
+	background: #16222A;
+	/*
+  background: -webkit-linear-gradient(59deg, #D2B48C, #FFE4C4);
+  background: linear-gradient(59deg, #D2B48C, #FFE4C4);*/
+	color: white;
+	/*..........den kanei kati*/
+	/*margin-top:100px; gia to poso tha apexei apo panw...tha allaksei ennoeitai meta afou tha to valoume sto katw meros*/
+}
+
+body>footer a {
+	color: #fff;
+	font-size: 15px;
+	/*gia ta grammata stis link lists*/
+	transition-duration: 0.2s;
+}
+
+body>footer a:hover {
+	color: #FA944B;
+	/*to portokali xrwma otan akoumpaw sta link lists*/
+	text-decoration: none;
+}
+
+.kyria {
+	/*h row (seira) pou exei to content.. thn onomasa gia na morfopoihsw to poso tha apexei apo panw kai katw*/
+	padding-bottom: 20px;
+}
+
+.newslett {
+	padding-top: 25px;
+	/*einai gia na apexei to follow us apo to newsletter*/
+}
+
+.list-unstyled {
+	line-height: 2.2;
+	/*apostash metaksy twn link lists*/
+}
+
+.copy {
+	/*katw katw to copyright*/
+	font-size: 12px;
+	padding: 20px;
+	border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+	/*gia tous headers morfopoihseis*/
+	padding-top: 2em;
+	color: white;
+}
+
+
+/*SOCIAL ICONS*/
+
+
+/* footer social icons */
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left: 0 !important;
+	padding: 0;
+}
+
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+	background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+	background-color: #007bb7;
+}
+
+.social-network a.icoInstagram:hover {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-network a.icoTwitter:hover {
+	background-color: #00aced;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoInstagram:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoLinkedin:hover i {
+	color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+	color: #44BCDD;
+}
+
+.social-circle li a {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	font-size: 15px;
+}
+
+.social-circle li i {
+	margin: 0;
+	line-height: 30px;
+	text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.social-circle i {
+	color: #595959;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-network a {
+	background-color: #F9F9F9;
+}
+
+/* --------------------------------------------------------*/
+/* ------------------ What Can I Do -----------------------*/
+/* --------------------------------------------------------*/
+
+#banner-wcIdo {
+	background: url('../../res/nature-conservation.jpg') no-repeat center fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 28em;
+}
+
+#h1-WhatCanIDo {
+	text-align: center;
+	font-size: 5em;
+}
+
+.org {
+	list-style-type: circle;
+}
+
+/* --------------------------------------------------------*/
+/* --------------- Sign A Petition - Related --------------*/
+/* --------------------------------------------------------*/
+
+#banner-petition {
+	background: url('../../res/mountains.jpg') no-repeat center fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 28em;
+}
+
+#h1-signPetition {
+	text-align: center;
+	font-size: 5em;
+}
+
+.petition-form input[type=submit] {
+	width: 65%;
+	height: 20%;
+	border: none;
+	background-color: #FAEBD7;
+	padding: 5%;
+	text-decoration: none;
+	margin: 4px 1px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.petition-form input[type=submit]:focus {
+	outline: 3px solid #FFE4C4;
+	border-radius: 4px;
+}
+
+.petition-form input[type=text]:focus {
+	border: 3px solid #D3D3D3;
+	border-radius: 4px;
+}
+
+.petition-form input[type=email]:focus {
+	border: 3px solid #D3D3D3;
+	border-radius: 4px;
+}
+
+.petition-form input[type=text] {
+	width: 65%;
+	padding: 3.5%;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	outline: #FFE4C4;
+}
+
+.petition-form input[type=email] {
+	width: 65%;
+	padding: 3.5%;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	outline: #FFE4C4;
+}
+
+.petition {
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 0, 0.3);
+	width: 100%;
+}
+
+.description {
+	background-color: #20B2AA;
+	width: 100%;
+	height: 40%;
+	font-size: 2em;
+	color: #F8F8FF;
+}
+
+.petition>a:link {
+	text-decoration: none;
+}
+
+.petition>a:hover {
+	font-size: 1.1em;
+}
+
+.issue {
+	border-left: solid #008B8B;
+}
+
+#goal {
+	color: #008B8B;
+	font-size: 2.5em;
+	font-weight: 500;
+}
+
+/* --------------------------------------------------------*/
+/* ------------------ Register/ Login ---------------------*/
+/* --------------------------------------------------------*/
+
+.register {
+	background: url('../../res/elephant.jpg') no-repeat center fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 41em;
+}
+
+.form-register {
+	background-color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	padding-bottom: 0.5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+	text-align: center;
+}
+
+#h1-login,
+#h1-register {
+	color: #CD853F;
+	/* font-style: italic; */
+	font-family: Georgia, sans-serif;
+	/*padding-top: 10px;*/
+}
+
+.connect input[type=submit] {
+	width: 100%;
+	border: none;
+	background-color: #FFDAB9;
+	padding: 10%;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.connect input[type=submit]:focus {
+	outline: 3px solid #CD853F;
+}
+
+.connect input[type=text],
+input[type=password] {
+	border: none;
+	border-bottom: 2px solid #CD853F;
+	outline: none;
+}
+
+.connect input[type=email] {
+	border: none;
+	border-bottom: 2px solid #CD853F;
+	outline: none;
+}
+
+/* --------------------------------------------------------*/
+/* --------------- Threats - Related ----------------------*/
+/* --------------------------------------------------------*/
+
+#banner {
+	background: url('../../res/threats1.jpg')no-repeat center fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 28em;
+}
+
+#h1-threats {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 80px;
+	letter-spacing: 1px;
+	color: white;
+}
+
+.mycarousel {
+	background-color: rgba(0, 0, 0, 0.3);
+	/*  position: relative;*/
+	bottom: 10px;
+}
+
+/* --------------------------------------------------------*/
+/* --------------- Targets - Related ----------------------*/
+/* --------------------------------------------------------*/
+
+#banner-targets {
+	background: url('../../res/tree.jpg') no-repeat center fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 28em;
+}
+
+#h1-targets {
+	text-align: center;
+	font-size: 5em;
+	color: white;
+}
+
+
+/*This is for the spaces on the rows in the targets and threats*/
+
+
+/*.thr-trg{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}*/
+
+#intro-trg {
+	padding-bottom: 2px;
+	padding-top: 15px;
+}
+
+
+/* --------------------------------------------------------*/
+/* --------------------- General Issues -------------------*/
+/* --------------------------------------------------------*/
+
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card-body h5 {
+	font-style: italic;
+}
+
+/* Fix the issue on right-placed images*/
+@media only screen and (min-width: 576px) {
+	.right-image {
+		flex-direction: row-reverse;
+	}
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
