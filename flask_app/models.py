@@ -28,3 +28,9 @@ class Quotes(db.Model):
     id= db.Column(db.Integer, primary_key=True)
     quote=db.Column(db.String(120), unique=True, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('person.id'),nullable=False)
+    
+    
+    
+    
+    
+    
