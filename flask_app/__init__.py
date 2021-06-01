@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from .DynamicQuotes import randomQuote
 
 def create_app():
     app = Flask(__name__)
@@ -6,7 +7,13 @@ def create_app():
     @app.route("/")
     @app.route("/index.html")
     def index():
-        return render_template("index.html",ttl="Home", home_active="active")
+
+        # Generate a random quote and parse it to index
+        pack = randomQuote()
+        quote = pack[0]
+        author = pack[1]
+
+        return render_template("index.html", home_active="active", quote=quote, quoteAuthor=author)
 
     @app.route("/register.html")
     def register():

@@ -22,8 +22,10 @@
     <div id="home-parallax" class="parallax mb-5">
       <div class="container mx-0">
         <blockquote class="blockquote w-50 float-right text-right shadow">
-          <p>The Earth is what we all have in common.</p>
-          <footer class="blockquote-footer">Wendell Berry</footer>
+          <p>{{ quote }}</p>
+          {% if quoteAuthor %}
+          <footer class="blockquote-footer">{{ quoteAuthor }}</footer>
+          {% endif %}
         </blockquote>
       </div>
     </div>
