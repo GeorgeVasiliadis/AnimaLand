@@ -1,0 +1,26 @@
+
+   {% if signed==0 %}
+   <div class="petition">
+    <a href="{{ petition_page }}.html">
+      <img src="{{ url_for('static', filename='{{image_location}}') }}" alt={{image_alt}} class="image-fluid" style="width:100%">
+         <div class="description">
+            <div class="text-center">
+              <p>{{petition_title}}</p>
+            </div>
+         </div>
+    </a>
+	</div>
+	{% elif signed==1 %}
+	<div class="petition-signed">
+	<a href="{{ petition_page }}.html">
+      <img src="{{ url_for('static', filename='{{image_location}}') }}" alt={{image_alt}} class="image-fluid photo" style="width:100%">
+	  <img src="res/tick.png" alt="tick" class="tick" style="width:20%">
+         <div class="description">
+            <div class="text-center">
+              <p>{{petition_title}}</p>
+            </div>
+         </div>
+    </a>
+	</div>
+	{% endif %}
+
