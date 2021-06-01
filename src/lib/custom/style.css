@@ -328,6 +328,16 @@ ul.social-network li {
 	width: 100%;
 }
 
+.petition-signed {
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 0, 0.3);
+	width: 100%;
+	position:relative;
+}
+
+.petition .photo { display: block; }
+
+.petition .tick {position: absolute; top:0; right:0;}
+
 .description {
 	background-color: #20B2AA;
 	width: 100%;
