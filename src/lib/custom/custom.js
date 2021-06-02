@@ -19,4 +19,10 @@
       toTop.classList.remove("active");
     }
   })
+  
+  function findText(){
+    let text=document.getElementById("search").value;
+	     window.find(text);
+  }
+  
   }
