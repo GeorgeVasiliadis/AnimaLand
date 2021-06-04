@@ -1,8 +1,15 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from flask_sqlalchemy import SQLAlchemy
 from .DynamicQuotes import randomQuote
+
+db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
+
+    app.config['SECRET_KEY'] = 'secret-key-goes-here'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+    db.__init__(app)
 
     @app.route("/")
     @app.route("/index.html")
@@ -42,4 +49,8 @@ def create_app():
     @app.route("/contact-us.html")
     def contact_us():
         return render_template("contact-us.html",ttl="Contact Us", contact_us_active="active")
+
+    from .authSession import authBlueprint
+    app.register_blueprint(authBlueprint)
+
     return app
