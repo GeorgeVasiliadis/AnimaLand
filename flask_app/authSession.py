@@ -5,21 +5,6 @@ from . import db
 
 authBlueprint = Blueprint("authBlueprint", __name__)
 
-@authBlueprint.route("/register.html", methods=["POST"])
-def register_post():
-    username = request.form.get("username")
-    password = request.form.get("password")
-    email = request.form.get("email")
-
-    if User.query.filter_by(email=email).first():
-        return redirect(url_for("login"))
-
-    user = User(email=email, username=username, password=password)
-    db.session.add(user)
-    db.session.commit()
-
-    return redirect(url_for("authBlueprint.manage_accounts"))
-
 @authBlueprint.route("/manage-accounts.html")
 def manage_accounts():
     users = User.query.all()
