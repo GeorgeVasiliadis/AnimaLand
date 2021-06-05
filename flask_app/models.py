@@ -1,8 +1,9 @@
+from flask_login import UserMixin
 from . import db
 
 #for the user
 #user.petitions--> returns me a list of user's petitions
-class User(db.Model):
+class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)

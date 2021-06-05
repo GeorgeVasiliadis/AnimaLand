@@ -1,6 +1,7 @@
 from flask import Blueprint
 from flask import render_template, redirect, url_for
-from flask import request
+from flask import request, flash
+from flask_login import login_user
 
 from . import db
 from .DynamicQuotes import randomQuote
@@ -30,6 +31,7 @@ def register_post():
     email = request.form.get("email")
 
     if User.query.filter_by(email=email).first():
+        #TODO flash
         return redirect(url_for("anonymousBlueprint.login"))
 
     user = User(email=email, username=username, password=password)
@@ -41,6 +43,21 @@ def register_post():
 @anonymousBlueprint.route("/login.html")
 def login():
     return render_template("login.html",ttl="Login")
+
+@anonymousBlueprint.route("/login.html", methods=["POST"])
+def login_post():
+    email = request.form.get("email")
+    password = request.form.get("password")
+
+    user = User.query.filter_by(email=email).first()
+
+    if not user:
+        #TODO flash
+        return redirect(url_for("anonymousBlueprint.login"))
+
+    login_user(user)
+    #TODO redirect to actual page
+    return render_template("/profile.html", user=user)
 
 @anonymousBlueprint.route("/threats.html")
 def threats():

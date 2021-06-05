@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager
 
 # Single Database used accross all app
 # `db` is intialized in `create_app()`
@@ -20,6 +21,17 @@ def create_app():
 
     # Database intialization
     db.__init__(app)
+
+    # LoginManager setup
+    login_manager = LoginManager()
+    login_manager.login_view = "anonymousBlueprint.login"
+    login_manager.init_app(app)
+
+    from .models import User
+    
+    @login_manager.user_loader
+    def load_user(user_id):
+        return User.query.get(int(user_id))
 
     # Blueprints registration
     from .authSession import authBlueprint
