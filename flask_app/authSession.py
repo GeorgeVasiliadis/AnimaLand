@@ -9,7 +9,7 @@ authBlueprint = Blueprint("authBlueprint", __name__)
 @login_required
 def manage_accounts():
     users = User.query.all()
-    return render_template("manage-accounts.html", users=users)
+    return render_template("manage-accounts.html", title="Manage Accounts", users=users)
 
 @authBlueprint.route("/manage/delete/account/<int:id>")
 @login_required

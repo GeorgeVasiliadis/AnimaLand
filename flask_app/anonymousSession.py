@@ -18,11 +18,11 @@ def index():
     quote = pack[0]
     author = pack[1]
 
-    return render_template("index.html", home_active="active", quote=quote, quoteAuthor=author)
+    return render_template("index.html", title="Home", home_active="active", quote=quote, quoteAuthor=author)
 
 @anonymousBlueprint.route("/register.html")
 def register():
-    return render_template("register.html",ttl="Sign Up")
+    return render_template("register.html", title="Sign Up")
 
 @anonymousBlueprint.route("/register.html", methods=["POST"])
 def register_post():
@@ -42,7 +42,7 @@ def register_post():
 
 @anonymousBlueprint.route("/login.html")
 def login():
-    return render_template("login.html",ttl="Login")
+    return render_template("login.html", title="Login")
 
 @anonymousBlueprint.route("/login.html", methods=["POST"])
 def login_post():
@@ -61,20 +61,20 @@ def login_post():
 
 @anonymousBlueprint.route("/threats.html")
 def threats():
-    return render_template("threats.html",ttl="Threats",threats_active="active")
+    return render_template("threats.html", title="Threats",threats_active="active")
 
 @anonymousBlueprint.route("/targets.html")
 def targets():
-    return render_template("targets.html",ttl="Targets", targets_active="active")
+    return render_template("targets.html", title="Targets", targets_active="active")
 
 @anonymousBlueprint.route("/what-can-i-do.html")
 def what_can_i_do():
-    return render_template("what-can-i-do.html",ttl="What Can I Do", wcid_active="active")
+    return render_template("what-can-i-do.html", title="What Can I Do", wcid_active="active")
 
 @anonymousBlueprint.route("/sign-a-petition.html")
 def sign_a_petition():
-    return render_template("sign-a-petition.html",ttl="Sign a petition", wcid_active="active")
+    return render_template("sign-a-petition.html", title="Sign a petition", wcid_active="active")
 
 @anonymousBlueprint.route("/contact-us.html")
 def contact_us():
-    return render_template("contact-us.html",ttl="Contact Us", contact_us_active="active")
+    return render_template("contact-us.html", title="Contact Us", contact_us_active="active")
