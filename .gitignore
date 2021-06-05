@@ -1,2 +1,4 @@
 __pycache__/
 *.py[cod]
+
+flask_app/db.sqlite
