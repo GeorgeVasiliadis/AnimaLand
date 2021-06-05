@@ -57,7 +57,7 @@ def login_post():
 
     login_user(user)
     #TODO redirect to actual page
-    return render_template("/profile.html", user=user)
+    return render_template(url_for("anonymousBlueprint.sign_a_petition"))
 
 @anonymousBlueprint.route("/threats.html")
 def threats():

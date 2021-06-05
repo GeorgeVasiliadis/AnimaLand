@@ -34,7 +34,7 @@
           <li class="nav-item {{home_active}}">
             <a class="nav-link" href="index.html">
             Home<span class="sr-only">(current)</span>
-            </a>
+          </a>
           </li>
           <li class="nav-item dropdown {{threats_active}}">
             <a class="nav-link dropdown-toggle" href="threats.html" id="actionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -65,16 +65,24 @@
           <li class="nav-item {{contact_us_active}}">
             <a class="nav-link" href="contact-us.html">Contact Us</a>
           </li>
-          <li class="nav-item">
-            <a class="btn btn-success" href="register.html" role="button">
-            <img src="{{ url_for('static', filename='res/sign-up.svg') }}" height="15" alt="Sign up icon">
-            Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-success" href="login.html" role="button">
-            <img src="{{ url_for('static', filename='res/sign-in.svg') }}" height="15" alt="Sign in icon">
-            Sign In</a>
-          </li>
+          {% if current_user.is_authenticated %}
+            <li class="nav-item">
+              <a class="btn btn-success" href="/logout" role="button">
+              <img src="{{ url_for('static', filename='res/sign-out.svg') }}" height="15" alt="Sign in icon">
+              {{ current_user.username }}</a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="btn btn-success" href="register.html" role="button">
+              <img src="{{ url_for('static', filename='res/sign-up.svg') }}" height="15" alt="Sign up icon">
+              Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-success" href="login.html" role="button">
+              <img src="{{ url_for('static', filename='res/sign-in.svg') }}" height="15" alt="Sign in icon">
+              Sign In</a>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </nav>
