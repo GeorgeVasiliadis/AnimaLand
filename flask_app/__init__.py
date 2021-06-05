@@ -18,6 +18,7 @@ def create_app():
     # Basic configuration
     app.config['SECRET_KEY'] = b'\xf8N>\xfc\xa3~R\x99kHUwR\xb6\xe26'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # Gets rid of stupid warning message
 
     # Database intialization
     db.__init__(app)
@@ -28,7 +29,7 @@ def create_app():
     login_manager.init_app(app)
 
     from .models import User
-    
+
     @login_manager.user_loader
     def load_user(user_id):
         return User.query.get(int(user_id))
