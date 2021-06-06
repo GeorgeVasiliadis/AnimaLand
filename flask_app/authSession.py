@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, url_for, request
+from flask import Blueprint, render_template, redirect, url_for, request, flash
 from flask_login import login_user, logout_user, login_required
 from .models import User
 from . import db
@@ -17,6 +17,7 @@ def delete_account(id):
     user = User.query.get_or_404(id)
     db.session.delete(user)
     db.session.commit()
+    flash("User was deleted!", "success")
     return redirect(url_for("authBlueprint.manage_accounts"))
 
 @authBlueprint.route("/logout")

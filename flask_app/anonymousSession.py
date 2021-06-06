@@ -31,8 +31,8 @@ def register_post():
     email = request.form.get("email")
 
     if User.query.filter_by(email=email).first():
-        #TODO flash
-        return redirect(url_for("anonymousBlueprint.login"))
+        flash(f"{ email } is already in use!", "danger")
+        return redirect(url_for("anonymousBlueprint.register"))
 
     user = User(email=email, username=username, password=password)
     db.session.add(user)
@@ -52,11 +52,11 @@ def login_post():
     user = User.query.filter_by(email=email).first()
 
     if not user:
-        #TODO flash
+        flash(f"There is no user with e-mail: { email }", "danger")
         return redirect(url_for("anonymousBlueprint.login"))
 
     login_user(user)
-    #TODO redirect to actual page
+    flash(f"Welcome { user.username }!", "success")
     return render_template(url_for("anonymousBlueprint.sign_a_petition"))
 
 @anonymousBlueprint.route("/threats.html")
