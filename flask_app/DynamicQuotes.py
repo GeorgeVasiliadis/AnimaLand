@@ -12,6 +12,7 @@ try:
     with open("quotes.json") as f_in:
         quotes = json.load(f_in)
 except:
+    open("DQ_log.txt", "w").write(f"{ __name__ } Warning: Missing source file `quotes.json`!")
     quotes = [["The Earth is a fine place and worth fighting for.", "Ernest Hemingway"]]
 
 def randomQuote():
