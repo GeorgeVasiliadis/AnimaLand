@@ -37,7 +37,8 @@ def register_post():
     user = User(email=email, username=username, password=password)
     db.session.add(user)
     db.session.commit()
-
+    
+    login_user(user)
     return redirect(url_for("authBlueprint.manage_accounts"))
 
 @anonymousBlueprint.route("/login.html")
