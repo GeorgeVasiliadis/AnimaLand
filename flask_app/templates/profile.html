@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-  {% if user %}
-  <h1>{{ user.username }}</h1>
-  {% endif %}
+<h1>{{ current_user.username }}</h1>
+<ul>
+  {% for petition in current_user.signedPetitions %}
+    <li>{{ petition.title }}</li>
+  {% endfor %}
+</ul>
 {% endblock %}

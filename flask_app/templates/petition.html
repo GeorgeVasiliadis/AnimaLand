@@ -24,13 +24,19 @@
             {{ petition.content|safe }}
           </div>
           <div class="col petition-form text-center">
-            <div id="goal"> {{ petition.goal }} </div>
+            <div id="goal"> {{petition.signCount }}/{{ petition.goal }} </div>
             <p> Petition's Goal </p>
             <br>
             {% if current_user.is_authenticated %}
-              <form action="/petition/{{ petition.id }}/sign" method="POST">
-                <input type="submit" value="Sign now"><br>
-              </form>
+              {% if current_user not in petition.signees %}
+                <form action="/petition/{{ petition.id }}/sign" method="POST">
+                  <input type="submit" value="Sign now"><br>
+                </form>
+              {% else %}
+                <form action="/petition/{{ petition.id }}/unsign" method="POST">
+                  <input type="submit" value="Unsign"><br>
+                </form>
+              {% endif%}
             {% else %}
               <form>
                 <input type="submit" value="Sign now" disabled><br>
