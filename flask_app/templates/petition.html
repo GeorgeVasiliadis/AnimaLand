@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+  {% if petition %}
+    <div id="banner-petition" class="container-fluid w-100">
+      <div class="row">
+        <div class="col text-center align-middle">
+          <h1 id="h1-signPetition">Every sign matters</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <br><br><br>
+      <div class="container-fluid w-75">
+        <div class="row issue">
+          <div class="col">
+            <h2>{{ petition.title }}</h2>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid w-75">
+        <div class="row issue">
+          <div class="col">
+            {{ petition.content|safe }}
+          </div>
+          <div class="col petition-form text-center">
+            <div id="goal"> {{ petition.goal }} </div>
+            <p> Petition's Goal </p>
+            <br>
+            <form action="sign-a-petition.html" autocomplete="on">
+              <input type="submit" value="Sign now"><br>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  {% endif %}
+{% endblock %}
