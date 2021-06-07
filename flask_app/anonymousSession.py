@@ -58,7 +58,7 @@ def login_post():
 
     login_user(user)
     flash(f"Welcome { user.username }!", "success")
-    return render_template(url_for("anonymousBlueprint.sign_a_petition"))
+    return redirect(url_for("anonymousBlueprint.sign_a_petition"))
 
 @anonymousBlueprint.route("/threats.html")
 def threats():

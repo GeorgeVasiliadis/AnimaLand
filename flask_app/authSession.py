@@ -50,3 +50,11 @@ def create_petition():
     db.session.commit()
 
     return redirect(url_for("anonymousBlueprint.sign_a_petition"))
+
+@authBlueprint.route("/petition/<int:id>/sign", methods=["POST"])
+@login_required
+def sign_petition(id):
+    petition = Petition.query.get_or_404(id)
+
+    flash("Petition was signed successfully!", "success")
+    return redirect(url_for("anonymousBlueprint.display_petition", id=id))
