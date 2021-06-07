@@ -27,9 +27,15 @@
             <div id="goal"> {{ petition.goal }} </div>
             <p> Petition's Goal </p>
             <br>
-            <form action="sign-a-petition.html" autocomplete="on">
-              <input type="submit" value="Sign now"><br>
-            </form>
+            {% if current_user.is_authenticated %}
+              <form action="/petition/{{ petition.id }}/sign" method="POST">
+                <input type="submit" value="Sign now"><br>
+              </form>
+            {% else %}
+              <form>
+                <input type="submit" value="Sign now" disabled><br>
+              </form>
+            {% endif %}
           </div>
         </div>
       </div>
