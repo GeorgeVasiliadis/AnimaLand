@@ -5,7 +5,7 @@ from flask_login import login_user
 
 from . import db
 from .DynamicQuotes import randomQuote
-from .models import User
+from .models import User, Petition
 
 anonymousBlueprint = Blueprint("anonymousBlueprint", __name__)
 
@@ -37,7 +37,7 @@ def register_post():
     user = User(email=email, username=username, password=password)
     db.session.add(user)
     db.session.commit()
-    
+
     login_user(user)
     return redirect(url_for("authBlueprint.manage_accounts"))
 
@@ -74,8 +74,15 @@ def what_can_i_do():
 
 @anonymousBlueprint.route("/sign-a-petition.html")
 def sign_a_petition():
-    return render_template("sign-a-petition.html", title="Sign a petition", wcid_active="active")
+    petitions = Petition.query.all()
+    return render_template("sign-a-petition.html", title="Sign a petition", wcid_active="active", petitions=petitions)
 
 @anonymousBlueprint.route("/contact-us.html")
 def contact_us():
     return render_template("contact-us.html", title="Contact Us", contact_us_active="active")
+
+@anonymousBlueprint.route("/petition/<int:id>")
+def display_petition(id):
+    petition = Petition.query.get_or_404(id)
+
+    return render_template("petition.html", title=petition.title, petition=petition, wcid_active="active")

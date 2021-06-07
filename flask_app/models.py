@@ -12,7 +12,10 @@ class User(UserMixin, db.Model):
 #for the petitions
 class Petition(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    signature=db.Column(db.String(120), unique=True, nullable=False)
+    title = db.Column(db.String(300), nullable=False, unique=True)
+    content = db.Column(db.Text, nullable=False)
+    goal = db.Column(db.Integer, nullable=False)
+    signCount = db.Column(db.Integer)
 
 #for quotes
 #author.quotes--> return a list of user's quotes
