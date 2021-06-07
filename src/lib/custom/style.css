@@ -334,9 +334,9 @@ ul.social-network li {
 	position:relative;
 }
 
-.petition .photo { display: block; }
+.petition-signed .photo { display: block; }
 
-.petition .tick {position: absolute; top:0; right:0;}
+.petition-signed .tick {position: absolute; top:0; right:0;}
 
 .description {
 	background-color: #20B2AA;
@@ -351,6 +351,14 @@ ul.social-network li {
 }
 
 .petition>a:hover {
+	font-size: 1.1em;
+}
+
+.petition-signed>a:link {
+	text-decoration: none;
+}
+
+.petition-signed>a:hover {
 	font-size: 1.1em;
 }
 
