@@ -84,5 +84,9 @@ def contact_us():
 @anonymousBlueprint.route("/petition/<int:id>")
 def display_petition(id):
     petition = Petition.query.get_or_404(id)
-    
+
     return render_template("petition.html", title=petition.title, petition=petition, wcid_active="active")
+
+@anonymousBlueprint.route("/test")
+def test():
+    return render_template("sign-a-petition-Signed-Form.html")
