@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
@@ -19,6 +21,7 @@ def create_app():
     app.config['SECRET_KEY'] = b'\xf8N>\xfc\xa3~R\x99kHUwR\xb6\xe26'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # Gets rid of stupid warning message
+    app.config['UPLOAD_FOLDER'] = os.path.join(app.root_path, "static", "uploads","res")
 
     # Database intialization
     db.__init__(app)
@@ -47,3 +50,8 @@ def create_app():
     app.register_blueprint(anonymousBlueprint)
 
     return app
+
+def allowed_file(filename):
+    extensions = {'jpg', 'jpeg', 'png'}
+    return '.' in filename and \
+        filename.rsplit('.', 1)[1].lower() in extensions

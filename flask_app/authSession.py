@@ -1,7 +1,12 @@
-from flask import Blueprint, render_template, redirect, url_for, request, flash
+import os
+
+from flask import Blueprint, render_template, redirect, url_for
+from flask import request, flash, current_app
 from flask_login import login_user, logout_user, login_required, current_user
+from werkzeug.utils import secure_filename
+
 from .models import User, Petition, signs
-from . import db
+from . import db, allowed_file
 
 authBlueprint = Blueprint("authBlueprint", __name__)
 
@@ -30,26 +35,46 @@ def logout():
 def petition_form():
     return render_template("petition-form.html", title="Petition Form")
 
-@authBlueprint.route("/manage/create/petition", methods=["POST"])
+@authBlueprint.route("/manage/create/petition", methods=["POST", "GET"])
 def create_petition():
-    title = request.form.get("title")
-    content = request.form.get("content")
-    goal = request.form.get("goal")
+    if request.method == "POST":
+        title = request.form.get("title")
+        content = request.form.get("content")
+        goal = request.form.get("goal")
+        file = request.files['image']
 
-    petition = Petition.query.filter_by(title=title).first()
+        try:
+            goal = int(goal)
+        except ValueError:
+            flash("Goal should be an integer", "danger")
+            return redirect(url_for("authBlueprint.create_petition"))
+        if goal <= 0:
+            flash("Goal should be a possitive intger", "danger")
+            return redirect(url_for("authBlueprint.create_petition"))
 
-    if petition:
-        flash(
-        "There is another petition with the same title. Please choose another name!",
-        "danger")
-        return redirect(url_for("authBlueprint.petition_form"))
+        # Attached file `file` is the petition thumbnail
+        if not file.filename:
+            flash("No image was selected!", "danger")
+            return redirect(request.url)
 
-    #todo: content should be checked for markup
-    petition = Petition(title=title, content=content, goal=goal)
-    db.session.add(petition)
-    db.session.commit()
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(current_app.config["UPLOAD_FOLDER"], filename))
 
-    return redirect(url_for("anonymousBlueprint.sign_a_petition"))
+        petition = Petition.query.filter_by(title=title).first()
+
+        if petition:
+            flash(
+            "There is another petition with the same title. Please choose another name!",
+            "danger")
+            return redirect(url_for("authBlueprint.petition_form"))
+
+        #todo: content should be checked for markup
+        petition = Petition(title=title, content=content, goal=goal, imagePath=filename)
+        db.session.add(petition)
+        db.session.commit()
+
+        return redirect(url_for("anonymousBlueprint.sign_a_petition"))
 
 @authBlueprint.route("/petition/<int:id>/sign", methods=["POST"])
 @login_required

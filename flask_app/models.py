@@ -25,3 +25,4 @@ class Petition(db.Model):
     content = db.Column(db.Text, nullable=False)
     goal = db.Column(db.Integer, nullable=False)
     signCount = db.Column(db.Integer, default=0)
+    imagePath = db.Column(db.String(200), nullable=False)
