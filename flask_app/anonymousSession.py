@@ -89,4 +89,4 @@ def display_petition(id):
 
 @anonymousBlueprint.route("/test")
 def test():
-    return render_template("sign-a-petition-Signed-Form.html")
+    return render_template("index.html")

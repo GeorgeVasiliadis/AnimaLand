@@ -1,4 +1,0 @@
-- profile - header: το profile να είναι κάπου πιο ξεχωριστα
-- gallery όχι στο homepage αλλά στα informative pages
-- contact-us = about us
-- threats: dynamic statistics και animation
