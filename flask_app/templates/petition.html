@@ -48,6 +48,9 @@
             {% endif %}
           </div>
         </div>
+        {% with imagePath = "/uploads/res/" + petition.imagePath %}
+        <img src="{{ url_for('static', filename=imagePath) }}">
+        {% endwith %}
       </div>
       <br>
     </div>
