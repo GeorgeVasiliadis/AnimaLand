@@ -3,7 +3,7 @@ from flask_app.models import User, Petition
 
 def createUsers():
     users = [
-        User(username="admin", email="admin@animaland.com", password="admin"),
+        User(username="admin", email="admin@animaland.com", password="admin", isAdmin=True),
         User(username="Nikos", email="nikosyro@csd.auth.gr", password="Nikos"),
         User(username="Margarita", email="margsoui@csd.auth.gr", password="Margarita"),
         User(username="Zoe", email="zkelepiri@csd.auth.gr", password="Zoe"),

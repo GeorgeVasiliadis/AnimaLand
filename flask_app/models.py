@@ -14,9 +14,11 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
     username = db.Column(db.String(80), nullable=False)
+    isAdmin = db.Column(db.Boolean, nullable=False, default=False)
     signedPetitions = db.relationship("Petition", secondary=signs, lazy="subquery",
         backref=db.backref("signees", lazy=True)
     )
+    
 
 #for the petitions
 class Petition(db.Model):
