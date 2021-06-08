@@ -26,7 +26,7 @@
           <div class="col petition-form text-center">
             <div class="progress">
               <div id="petitions-bar" class="progress-bar" role="progressbar" aria-valuenow="{{petition.signCount}}"
-                   aria-valuemin="0" aria-valuemax="{{petition.goal}}" style=" width:{{ {{petition.signCount}}/{{petition.goal}}*100 }} %; background-color: #008B8B; !important">
+                   aria-valuemin="0" aria-valuemax="{{petition.goal}}" style=" width:{{ petition.signCount / petition.goal*100 }}%; background-color: #008B8B; !important">
               </div>
             </div>
             <p> Petition's Goal </p>
