@@ -94,8 +94,4 @@ def search_results():
     keywords = keywords.split()
     relevantPetitions = SE.search(*keywords)
 
-    return render_template("search.html", relevantPetitions=relevantPetitions)
-
-@anonymousBlueprint.route("/test")
-def test():
-    return render_template("ideas/searchnotfound.html")
+    return render_template("search.html", title="Search Results", relevantPetitions=relevantPetitions)
