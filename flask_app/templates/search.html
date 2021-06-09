@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container my-auto">
+    {% if relevantPetitions %}
+      <div class="container-fluid w-75">
+        <div class="row ">
+          <div class="col-md-12 col-sm-12">
+            <h3 class="py-2">Search Results</h3>
+          </div>
+        </div>
+      </div>
+      <hr class="w-75">
+      {% for petition in relevantPetitions %}
+        <div class="container-fluid w-75 py-5">
+          <div class="row right-image d-flex">
+            <div class="col-md-4 col-sm-4 my-auto">
+              <img class="img-fluid my-auto shadow" src="{{ url_for('static', filename='uploads/res/' + petition.imagePath) }}" alt="the main image of page found">
+            </div>
+            <div class="col-md-8 col-sm-8 my-auto">
+              <h5 class="py-2">{{ petition.title }}</h5>
+              <a href="petition/{{ petition.id }}">Go to petition!</a>
+            </div>
+          </div>
+        </div>
+        <hr class="w-75">
+      {% endfor %}
+    {% else %}
+      <div class="container-fluid w-75 py-5 my-5">
+        <div class="row pt-5">
+          <div class="col-md-12 col-sm-12 text-center">
+            <h5 class="py-2">No results were found.<br>You can search for something else...</h5>
+            <a href="sign-a-petition.html">Keep Searching!</a>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

@@ -6,6 +6,7 @@ from flask_login import login_user
 from . import db
 from .DynamicQuotes import randomQuote
 from .models import User, Petition
+from . import SearchEngine as SE
 
 anonymousBlueprint = Blueprint("anonymousBlueprint", __name__)
 
@@ -84,9 +85,17 @@ def contact_us():
 @anonymousBlueprint.route("/petition/<int:id>")
 def display_petition(id):
     petition = Petition.query.get_or_404(id)
-
     return render_template("petition.html", title=petition.title, petition=petition, wcid_active="active")
+
+@anonymousBlueprint.route("/search.html", methods=["POST"])
+def search_results():
+    keywords = request.form.get("keywords")
+
+    keywords = keywords.split()
+    relevantPetitions = SE.search(*keywords)
+
+    return render_template("search.html", relevantPetitions=relevantPetitions)
 
 @anonymousBlueprint.route("/test")
 def test():
-    return render_template("index.html")
+    return render_template("ideas/searchnotfound.html")
