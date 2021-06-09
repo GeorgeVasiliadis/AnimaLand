@@ -1,7 +1,36 @@
-from flask_app import create_app, db
-from flask_app.models import User, Petition
+import os
 
-def createUsers():
+from flask_app import create_app, db
+
+DB_PATH = os.path.normpath("flask_app/db.sqlite" )
+
+def install():
+    if not os.path.exists(DB_PATH):
+        db.create_all(app=create_app())
+        print(f"Database was installed successfully: {DB_PATH}")
+        return True
+
+    print(f"Database couldn't be installed. There is already another \
+database in use: {DB_PATH}")
+    return False
+
+def uninstall():
+    if os.path.exists(DB_PATH):
+        try:
+            os.remove(DB_PATH)
+            print(f"Database was uninstalled successfully: {DB_PATH}")
+        except Exception as e:
+            print(f"Couldn't uninstall database!")
+            print(e)
+            return False
+    else:
+        print("There is no database to be uninstalled.")
+
+    return True
+
+def populateUsers():
+    from flask_app.models import User
+
     users = [
         User(username="admin", email="admin@animaland.com", password="admin", isAdmin=True),
         User(username="Nikos", email="nikosyro@csd.auth.gr", password="Nikos"),
@@ -11,9 +40,14 @@ def createUsers():
     ]
     for user in users:
         db.session.add(user)
-    db.session.commit()
 
-def createPetitions():
+    db.session.commit()
+    print("Users were populated successfully!")
+
+def populatePetitions():
+    from shutil import copy2
+    from flask_app.models import Petition
+
     petitions = [
         Petition(title="Save the Sharks",
             content=open("dummy/save-the-sharks.html", "r").read(),
@@ -46,13 +80,33 @@ def createPetitions():
             imagePath="iceberg.jpg"
         )
     ]
-
     for petition in petitions:
         db.session.add(petition)
+
     db.session.commit()
+    print("Petitions were populated successfully!")
+
+    # Copy dummy images into appropriate location in flask_app
+    prefix_old = os.path.normpath("dummy/")
+    prefix_new = os.path.normpath("flask_app/static/uploads/res/")
+    os.makedirs(prefix_new, exist_ok=True)
+    for petition in petitions:
+        old = os.path.join(prefix_old, petition.imagePath)
+        new = os.path.join(prefix_new, petition.imagePath)
+        copy2(old, new)
+
+    print("Thumbnail images for petitions were copied successfully!")
+
+def reset():
+    if not uninstall():
+        print("Aborting...")
+        return
+    if not install():
+        print("Aborting...")
+        return
+    populateUsers()
+    populatePetitions()
 
 if __name__ == "__main__":
-    app = create_app()
-    app.app_context().push()
-    createUsers()
-    createPetitions()
+    reset()
+    input("Press any key to exit...")
