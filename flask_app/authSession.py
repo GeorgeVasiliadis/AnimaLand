@@ -157,8 +157,7 @@ def create_petition():
             # Store file into appropriate path
             file.save(os.path.join(current_app.config["UPLOAD_FOLDER"], filename))
         else:
-            flash(
-            "Attached file is invalid.", "danger")
+            flash("Attached file is invalid.", "danger")
             return redirect(url_for("authBlueprint.petition_form"))
 
         # Ensure that the under-construction petition has a unique name
@@ -177,3 +176,4 @@ def create_petition():
 
         flash(f'"{title}" was created successfully!', "success")
         return redirect(url_for("anonymousBlueprint.sign_a_petition"))
+    return redirect(url_for("authBlueprint.petition_form"))
