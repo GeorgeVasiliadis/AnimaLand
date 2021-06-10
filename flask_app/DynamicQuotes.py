@@ -1,20 +1,22 @@
+"""
+Module used to load a random quote from a standard file.
+"""
 import random
 import json
 
-# General format of pack: Tuple of quote and author - ("quote", "author")
-# Quotes is a list of packs
-
-#
-quotes = []
-
-# Try to load quotes from file. If that fails, initialize quotes to a simple quote.
-try:
-    with open("quotes.json") as f_in:
-        quotes = json.load(f_in)
-except:
-    open("DQ_log.txt", "w").write(f"{ __name__ } Warning: Missing source file `quotes.json`!")
-    quotes = [["The Earth is a fine place and worth fighting for.", "Ernest Hemingway"]]
+QUOTES_FILENAME = "quotes.json"
+LOG_FILENAME = "DQ_log.txt"
 
 def randomQuote():
-    pack = random.choice(quotes)
-    return pack
+
+    # Initialize quotelist with at least one hard-coded quote, as safety-net
+    quotes = [["The Earth is a fine place and worth fighting for.", "Ernest Hemingway"]]
+
+    # Try to load quotes from file. If loading fails, log a message to a file
+    try:
+        with open(QUOTES_FILENAME) as f_in:
+            quotes = json.load(f_in)
+    except:
+        open(LOG_FILENAME, "w").write(f"{ __name__ } Warning: Missing source file `{QUOTES_FILENAME}`!")
+
+    return random.choice(quotes)
