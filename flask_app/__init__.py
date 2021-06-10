@@ -52,6 +52,9 @@ def create_app():
     return app
 
 def allowed_file(filename):
+    """Check if filename complies with the allowed extensions."""
+
     extensions = {'jpg', 'jpeg', 'png'}
+
     return '.' in filename and \
         filename.rsplit('.', 1)[1].lower() in extensions
