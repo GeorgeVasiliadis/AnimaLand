@@ -14,10 +14,9 @@ anonymousBlueprint = Blueprint("anonymousBlueprint", __name__)
 @anonymousBlueprint.route("/index.html")
 def index():
 
-    # Generate a random quote and parse it to index
-    pack = randomQuote()
-    quote = pack[0]
-    author = pack[1]
+    # Generate a random quote and parse it to index page
+    # todo: maybe store quotes in DB?
+    quote, author = randomQuote()
 
     return render_template("index.html", title="Home", home_active="active", quote=quote, quoteAuthor=author)
 
@@ -27,43 +26,54 @@ def register():
 
 @anonymousBlueprint.route("/register.html", methods=["POST"])
 def register_post():
+
+    # Fetch form details
     username = request.form.get("username")
     password = request.form.get("password")
     email = request.form.get("email")
 
+    # Ensure that the provided email hasn't been registered before
     if User.query.filter_by(email=email).first():
         flash(f"{ email } is already in use!", "danger")
         return redirect(url_for("anonymousBlueprint.register"))
 
+    # Create and store new user
+    # todo store password as hash?
     user = User(email=email, username=username, password=password)
     db.session.add(user)
     db.session.commit()
 
+    # Log in newly-created user
     login_user(user)
+
     return redirect(url_for("authBlueprint.manage_accounts"))
 
 @anonymousBlueprint.route("/login.html")
 def login():
-    return render_template("login.html", title="Login")
+    return render_template("login.html", title="Sign In")
 
 @anonymousBlueprint.route("/login.html", methods=["POST"])
 def login_post():
+
+    # Fetch form details
     email = request.form.get("email")
     password = request.form.get("password")
 
+    # Check if user is valid (aka registered)
     user = User.query.filter_by(email=email).first()
-
     if not user:
         flash(f"There is no user with e-mail: { email }", "danger")
         return redirect(url_for("anonymousBlueprint.login"))
 
+    # Log in user
     login_user(user)
+
     flash(f"Welcome { user.username }!", "success")
     return redirect(url_for("anonymousBlueprint.sign_a_petition"))
 
 @anonymousBlueprint.route("/threats.html")
 def threats():
-    return render_template("threats.html", title="Threats",threats_active="active")
+    return render_template("threats.html", title="Threats", threats_active="active")
 
 @anonymousBlueprint.route("/targets.html")
 def targets():
@@ -75,8 +85,11 @@ def what_can_i_do():
 
 @anonymousBlueprint.route("/sign-a-petition.html")
 def sign_a_petition():
+
+    # Fetch stored petitions
     petitions = Petition.query.all()
-    return render_template("sign-a-petition.html", title="Sign a petition", wcid_active="active", petitions=petitions)
+
+    return render_template("sign-a-petition.html", title="Sign A Petition", wcid_active="active", petitions=petitions)
 
 @anonymousBlueprint.route("/contact-us.html")
 def contact_us():
@@ -84,14 +97,22 @@ def contact_us():
 
 @anonymousBlueprint.route("/petition/<int:id>")
 def display_petition(id):
+
+    # Try to fetch requested petition
     petition = Petition.query.get_or_404(id)
+
     return render_template("petition.html", title=petition.title, petition=petition, wcid_active="active")
 
 @anonymousBlueprint.route("/search.html", methods=["POST"])
 def search_results():
+
+    # Fetch form details
     keywords = request.form.get("keywords")
 
+    # Tokenize keywords removing whitespace characters
     keywords = keywords.split()
+
+    # Search and feth relevant petitions
     relevantPetitions = SE.search(*keywords)
 
     return render_template("search.html", title="Search Results", relevantPetitions=relevantPetitions)
