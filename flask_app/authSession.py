@@ -57,7 +57,6 @@ def sign_petition(id):
     else:
         # Update database respecting the new sign
         petition.signees.append(current_user)
-        petition.signCount += 1
         db.session.commit()
         flash("Petition was signed successfully!", "success")
 
@@ -75,7 +74,6 @@ def unsign_petition(id):
     if current_user in petition.signees:
         # Update database respecting the new unsign
         petition.signees.remove(current_user)
-        petition.signCount -= 1
         db.session.commit()
         flash("Petition was unsigned successfully!", "success")
     else:
