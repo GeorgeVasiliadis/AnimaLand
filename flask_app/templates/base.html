@@ -73,7 +73,12 @@
               <a class="btn btn-success" href="{{ url_for('authBlueprint.logout') }}" role="button">
               <img src="{{ url_for('static', filename='res/sign-out.svg') }}" height="15" alt="Sign in icon">
               {{ current_user.username }}</a>
+              
+              //for manage-accounts
+              <a class="btn btn-success" role="button">
+                <img src="{{ url_for('static', filename='res/checked-user-16.png') }}" height="15" alt="Account Icon">Accounts</a>
             </li>
+          
           {% else %}
             <li class="nav-item">
               <a class="btn btn-success" href="{{ url_for('anonymousBlueprint.register') }}" role="button">
