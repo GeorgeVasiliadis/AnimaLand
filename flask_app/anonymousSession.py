@@ -1,7 +1,7 @@
 from flask import Blueprint
 from flask import render_template, redirect, url_for
 from flask import request, flash
-from flask_login import login_user
+from flask_login import login_user, current_user
 
 from . import db
 from .DynamicQuotes import randomQuote
@@ -106,6 +106,10 @@ def display_petition(id):
 
     # Try to fetch requested petition
     petition = Petition.query.get_or_404(id)
+
+    # Inform an anonymous visitor that sign feature is disabled
+    if not current_user.is_authenticated:
+        flash("You will not be able to sign a petition. Login with your account first!", "info")
 
     return render_template("petition.html", title=petition.title, petition=petition, wcid_active="active")
 
