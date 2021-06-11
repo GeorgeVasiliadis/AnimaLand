@@ -37,8 +37,8 @@ def register_post():
         flash(f"{ email } is already in use!", "danger")
         return redirect(url_for("anonymousBlueprint.register"))
 
+
     # Create and store new user
-    # todo store password as hash?
     user = User(email=email, username=username, password=password)
     db.session.add(user)
     db.session.commit()
@@ -65,6 +65,11 @@ def login_post():
     if not user:
         flash(f"There is no user with e-mail: { email }", "danger")
         return redirect(url_for("anonymousBlueprint.login"))
+
+    # Ensure that the user inserted the right credentials
+    if not password == user.password:
+        flash("The password you inserted is invalid!", "danger")
+        return redirect(url_for("anonymousBlueprint.login_post"))
 
     # Log in user
     login_user(user)
