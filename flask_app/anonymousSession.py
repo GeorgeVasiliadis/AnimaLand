@@ -46,7 +46,8 @@ def register_post():
     # Log in newly-created user
     login_user(user)
 
-    return redirect(url_for("authBlueprint.manage_accounts"))
+    flash(f"Welcome to AnimaLand {username}!", "success")
+    return redirect(url_for("anonymousBlueprint.sign_a_petition"))
 
 @anonymousBlueprint.route("/login.html")
 def login():
@@ -68,7 +69,7 @@ def login_post():
     # Log in user
     login_user(user)
 
-    flash(f"Welcome { user.username }!", "success")
+    flash(f"Welcome back { user.username }!", "success")
     return redirect(url_for("anonymousBlueprint.sign_a_petition"))
 
 @anonymousBlueprint.route("/threats.html")
