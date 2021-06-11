@@ -161,6 +161,12 @@ def create_petition():
             # prefixes like `../`
             filename = secure_filename(file.filename)
 
+            # Ensure that there is no other image stored in uploads with same
+            # name to prevent overwriting images. If there are, prepend title to
+            # image name.
+            if Petition.query.filter_by(imagePath=filename):
+                filename = title + "_" + filename
+
             # Store file into appropriate path
             file.save(os.path.join(current_app.config["UPLOAD_FOLDER"], filename))
         else:
