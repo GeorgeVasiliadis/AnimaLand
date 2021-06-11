@@ -42,8 +42,11 @@
         {% endfor %}
       </div>
     {% endfor %}
+
+    {% if current_user.isAdmin %}
       <nav class="navbar navbar-light justify-content-center pt-5">
-    <button class="btn btn-outline-success button5" >+ Add a petition</button>
-    </nav>
+        <a class="btn btn-outline-success button5" role="button" href="{{ url_for('authBlueprint.create_petition') }}">+ Add a petition</a>
+      </nav>
+    {% endif %}
   </div>
 {% endblock %}
