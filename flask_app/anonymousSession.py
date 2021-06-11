@@ -117,3 +117,8 @@ def search_results():
     relevantPetitions = SE.search(*keywords)
 
     return render_template("search.html", title="Search Results", relevantPetitions=relevantPetitions)
+
+@anonymousBlueprint.route("/subscribe", methods=["POST"])
+def subscribe_to_newsletter():
+    flash("You were successfully subscribed to our Newsletter!", "success")
+    return redirect(url_for("anonymousBlueprint.index"))
