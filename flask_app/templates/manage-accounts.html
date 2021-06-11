@@ -15,7 +15,11 @@
         <tr>
           <td>{{ user.username }}</td>
           <td>{{ user.email }}</td>
-          <td><a href="/manage/delete/account/{{ user.id }}">Delete</a></td>
+          <td>
+            {% if not user.isAdmin %}
+              <a href="/manage/delete/account/{{ user.id }}">Delete</a>
+            {% endif %}
+          </td>
         </tr>
         {% endfor %}
       </tbody>

@@ -100,6 +100,13 @@ def delete_account(id):
     # Try to fetch requested user
     user = User.query.get_or_404(id)
 
+    # Ensure that the admin user will never be deleted
+    if user.isAdmin:
+        # Note that this check provides just safety-net functionality. This
+        # state is never reached from provided Views.
+        flash("Admin cannot be deleted!", "danger")
+        return redirect(url_for("authBlueprint.manage_accounts"))
+
     # Delete requested user
     db.session.delete(user)
     db.session.commit()
