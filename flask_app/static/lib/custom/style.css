@@ -630,3 +630,7 @@ input[type=password] {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.button5{
+	font-size: 25px;
+}
