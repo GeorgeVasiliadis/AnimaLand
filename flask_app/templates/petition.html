@@ -29,7 +29,7 @@
                    aria-valuemin="0" aria-valuemax="{{petition.goal}}" style=" width:{{ petition.signCount() / petition.goal*100 }}%; background-color: #008B8B; !important">
               </div>
             </div> <br>
-            <p> <span class="number-reached">{{petition.signCount()}}/{{petition.goal}}</span> petitions' goal reached!</p>
+            <p> <span class="number-reached">{{petition.signCount()}}/{{petition.goal}}</span> petition's goal has been reached!</p>
             <br>
             {% if current_user.is_authenticated %}
               {% if current_user not in petition.signees %}

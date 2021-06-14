@@ -109,7 +109,7 @@ def display_petition(id):
 
     # Inform an anonymous visitor that sign feature is disabled
     if not current_user.is_authenticated:
-        flash("You will not be able to sign a petition. Login with your account first!", "info")
+        flash("You will not be able to sign this petition. Login with your account first!", "info")
 
     return render_template("petition.html", title=petition.title, petition=petition, wcid_active="active")
 
