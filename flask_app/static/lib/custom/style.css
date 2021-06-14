@@ -99,8 +99,8 @@ body>footer {
   background: -webkit-linear-gradient(59deg, #D2B48C, #FFE4C4);
   background: linear-gradient(59deg, #D2B48C, #FFE4C4);*/
 	color: white;
-	/*..........den kanei kati*/
-	/*margin-top:100px; gia to poso tha apexei apo panw...tha allaksei ennoeitai meta afou tha to valoume sto katw meros*/
+	/**/
+	/*margin-top:100px; */
 }
 
 body>footer a {
@@ -295,33 +295,7 @@ ul.social-network li {
 	border-radius: 4px;
 }
 
-.petition-form input[type=text]:focus {
-	border: 3px solid #D3D3D3;
-	border-radius: 4px;
-}
 
-.petition-form input[type=email]:focus {
-	border: 3px solid #D3D3D3;
-	border-radius: 4px;
-}
-
-.petition-form input[type=text] {
-	width: 65%;
-	padding: 3.5%;
-	margin-bottom: 4%;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	outline: #FFE4C4;
-}
-
-.petition-form input[type=email] {
-	width: 65%;
-	padding: 3.5%;
-	margin-bottom: 4%;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	outline: #FFE4C4;
-}
 
 .petition {
 	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 0, 0.3);
@@ -366,11 +340,11 @@ ul.social-network li {
 	border-left: solid #008B8B;
 }
 
-#goal {
+.issue .number-reached {
 	color: #008B8B;
-	font-size: 2.5em;
-	font-weight: 500;
+	font-size: 1.2em;
 }
+
 
 /* --------------------------------------------------------*/
 /* ------------------ Register/ Login ---------------------*/
@@ -475,14 +449,6 @@ input[type=password] {
 	color: white;
 }
 
-
-/*This is for the spaces on the rows in the targets and threats*/
-
-
-/*.thr-trg{
-  padding-top: 30px;
-  padding-bottom: 30px;
-}*/
 
 #intro-trg {
 	padding-bottom: 2px;
