@@ -28,8 +28,8 @@
               <div id="petitions-bar" class="progress-bar" role="progressbar" aria-valuenow="{{petition.signCount()}}"
                    aria-valuemin="0" aria-valuemax="{{petition.goal}}" style=" width:{{ petition.signCount() / petition.goal*100 }}%; background-color: #008B8B; !important">
               </div>
-            </div>
-            <p> Petition's Goal </p>
+            </div> <br>
+            <p> <span class="number-reached">{{petition.signCount()}}/{{petition.goal}}</span> petitions' goal reached!</p>
             <br>
             {% if current_user.is_authenticated %}
               {% if current_user not in petition.signees %}
