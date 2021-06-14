@@ -457,8 +457,14 @@ input[type=password] {
 /* --------------------------------------------------------*/
 /* --------------------- Add a petition -------------------*/
 /* --------------------------------------------------------*/
-.make-petition .title, .content{
-	width: 30%;
+.make-petition .title, .content, .goal{
+	width: 42%;
+}
+
+@media only screen and (min-width: 576px) {
+.make-petition .give-image{
+	padding-right: 28%
+}
 }
 
 .make-petition input[type="submit"]{
