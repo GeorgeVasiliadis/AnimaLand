@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="containe">
   <h1 class="py-5 text-center align-middle">Make a new petition here!</h1>
   <form class="make-petition text-center" action="/manage/create/petition" method="POST" enctype="multipart/form-data">
   <label for="title"></label>
@@ -19,7 +18,6 @@
 
    <button type="submit"  href="#" class="btn btn-success">Create Petition</button><br><br>
   </form>
-  </div>
 
 {% endblock %}
 
