@@ -1,23 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-
+<div class="containe">
   <h1 class="py-5 text-center align-middle">Make a new petition here!</h1>
-  <form class="make-petition text-center align-middle" action="/manage/create/petition" method="POST" enctype="multipart/form-data">
+  <form class="make-petition text-center" action="/manage/create/petition" method="POST" enctype="multipart/form-data">
   <label for="title"></label>
   <input type="text" id="title" name="title" value="" placeholder="Title of the petition" required class="title"><br><br><br>
   <label for="content"></label>
   <textarea type="text" id="content" name="content" value="" placeholder="Content of the petition" required cols="50" rows="10" class="content"></textarea><br><br><br>
 
 
-  <p><label for="goal">Goal for Signs</label></p>
-  <input type="number" id="goal" name="goal" required class="py-2" min="1" style="width: 12em"><br><br><br>
+  <label for="goal"></label>
+  <input type="number" id="goal" name="goal" value="" placeholder="Goal number for signs" required class="goal" min="1"><br><br><br>
 
 
-  <label for="image" >Give an image for the petition:  </label><br>
-  <input type="file" id="image" name="image" accept=".png, .jpeg, .jpg" required><br><br><br>
+  <div class="image-give">
+  <label for="image" class="give-image">Give an image for the petition:  </label><br>
+  <input type="file" id="image" name="image" accept=".png, .jpeg, .jpg" class="goal" required></div><br><br><br>
 
    <button type="submit"  href="#" class="btn btn-success">Create Petition</button><br><br>
   </form>
+  </div>
 
 {% endblock %}
 
