@@ -4,7 +4,7 @@ Module used to load a random quote from a standard file.
 import random
 import json
 
-QUOTES_FILENAME = "quotes.json"
+QUOTES_FILENAME = "flask_app/quotes.json"
 LOG_FILENAME = "DQ_log.txt"
 
 def randomQuote():
