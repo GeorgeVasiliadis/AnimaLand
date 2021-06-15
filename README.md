@@ -1,5 +1,10 @@
 # AnimaLand
 
+This web-app is meant to motivate people into saving the earth.
+
+![Home page of AnimaLand](Report/res/AnimaLand.png)
+
+
 ## Optional Main Workflow
 
 1. Stay Organized
